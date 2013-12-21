@@ -7,7 +7,9 @@
     },
     "require-dev": {
         "phpunit/phpunit": "dev-master",
-        "phpunit/phpunit-mock-objects": "dev-master"
+        "phpunit/phpunit-mock-objects": "dev-master",
+        "squizlabs/php_codesniffer": "dev-master",
+        "scrutinizer/php-analyzer": "dev-master"
     },
     "repositories": [
         { "type": "git", "url": "https://github.com/lord2800/di.php.git" }
