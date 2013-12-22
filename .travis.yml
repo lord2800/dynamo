@@ -3,8 +3,9 @@ php:
  - 5.5
 
 install:
+ - echo 'zend_extension="xdebug.so"' >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
  - echo "yes\n" | pecl install pecl_http
- - cat ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini | grep -v '^;'
+ - grep -o '[^;].*' ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
  - composer install --prefer-dist --dev
  - npm install -g grunt-cli
  - npm install
