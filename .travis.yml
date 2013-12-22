@@ -3,7 +3,10 @@ php:
  - 5.5
 
 install:
+ - echo "extension = xdebug.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
  - echo "yes\n" | pecl install pecl_http
+ - ls -lah ~/.phpenv/versions/$(phpenv version-name)/etc/
+ - ls -lah ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d
  - mv ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/http.ini ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/zzz-http.ini
  - composer install --prefer-dist --dev
  - npm install -g grunt-cli
