@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "fe7455006961b1c1cfd53abe9729be9f",
+    "hash": "18a7dcaca525a40787c7b47755e8d103",
     "packages": [
         {
             "name": "lord2800/di.php",
@@ -11,13 +11,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/lord2800/di.php.git",
-                "reference": "0470ff968f053783836d3205ca6db33e5249be0d"
+                "reference": "88ac8baaab1371546da9d1240065a7ca637288f0"
             },
             "require-dev": {
+                "mockery/mockery": "dev-master",
                 "phpunit/phpunit": "dev-master",
-                "phpunit/phpunit-mock-objects": "dev-master"
+                "scrutinizer/php-analyzer": "dev-master",
+                "squizlabs/php_codesniffer": "dev-master"
             },
             "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "DI": "src/"
+                }
+            },
             "license": [
                 "MIT"
             ],
@@ -28,7 +35,7 @@
                 }
             ],
             "description": "A dependency injector, rather than a container or service locator.",
-            "time": "2013-12-21 21:34:12"
+            "time": "2013-12-22 04:05:08"
         }
     ],
     "packages-dev": [
@@ -327,12 +334,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "8f94c5dc226bfecc3a59a833d07aabc34c122d18"
+                "reference": "1d5afda93c4ec7b81f3bee760bb0e5424dbb44ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/8f94c5dc226bfecc3a59a833d07aabc34c122d18",
-                "reference": "8f94c5dc226bfecc3a59a833d07aabc34c122d18",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/1d5afda93c4ec7b81f3bee760bb0e5424dbb44ba",
+                "reference": "1d5afda93c4ec7b81f3bee760bb0e5424dbb44ba",
                 "shasum": ""
             },
             "require": {
@@ -390,7 +397,7 @@
                 "persistence",
                 "queryobject"
             ],
-            "time": "2013-12-21 21:14:17"
+            "time": "2013-12-21 22:07:19"
         },
         {
             "name": "doctrine/inflector",
@@ -2010,12 +2017,12 @@
     "stability-flags": {
         "lord2800/di.php": 20,
         "phpunit/phpunit": 20,
-        "phpunit/phpunit-mock-objects": 20,
         "squizlabs/php_codesniffer": 20,
         "scrutinizer/php-analyzer": 20
     },
     "platform": {
-        "php": ">=5.5.0"
+        "php": ">=5.5.0",
+        "ext-http": ">=2.0"
     },
     "platform-dev": [
 

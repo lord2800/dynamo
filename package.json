@@ -8,7 +8,8 @@
     "grunt-php-analyzer": "~0.1.0",
     "grunt-phpcs": "~0.2.1",
     "grunt-phplint": "~0.0.5",
-    "grunt-phpunit": "~0.3.2"
+    "grunt-phpunit": "~0.3.2",
+    "grunt-contrib-watch": "~0.5.3"
   },
   "scripts": {
     "test": "grunt test"

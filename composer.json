@@ -3,11 +3,11 @@
     "description": "A generator-based lightweight framework",
     "require": {
         "php": ">=5.5.0",
+        "ext-http": ">=2.0",
         "lord2800/di.php": "master@dev"
     },
     "require-dev": {
         "phpunit/phpunit": "dev-master",
-        "phpunit/phpunit-mock-objects": "dev-master",
         "squizlabs/php_codesniffer": "dev-master",
         "scrutinizer/php-analyzer": "dev-master"
     },
@@ -21,6 +21,11 @@
             "email": "lord2800@gmail.com"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-0": {
+            "Dynamo": "src/"
+        }
+    }
 }
 
