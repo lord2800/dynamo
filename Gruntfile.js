@@ -40,7 +40,7 @@ module.exports = function (grunt) {
 				}
 			},
 			src: ['**']
-		}
+		},
 		watch: {
 			test: {
 				files: ['tests/**/*.php'],
