@@ -3,16 +3,22 @@
     "description": "A generator-based lightweight framework",
     "require": {
         "php": ">=5.5.0",
-        "ext-http": ">=2.0",
         "lord2800/di.php": "master@dev"
     },
     "require-dev": {
         "phpunit/phpunit": "dev-master",
         "squizlabs/php_codesniffer": "dev-master",
-        "scrutinizer/php-analyzer": "dev-master"
+        "scrutinizer/php-analyzer": "dev-master",
+        "ext-http": ">=2.0.0",
+        "lord2800/convey": "master@dev"
+    },
+    "suggest": {
+        "ext-http": "PECL HTTP extension (required for Dynamo\\WebApp)",
+        "lord2800/convey": "Lightweight flexible micro-router (required for Dynamo\\WebApp)"
     },
     "repositories": [
-        { "type": "git", "url": "https://github.com/lord2800/di.php.git" }
+        { "type": "git", "url": "https://github.com/lord2800/di.php.git" },
+        { "type": "git", "url": "https://github.com/lord2800/convey.git" }
     ],
     "license": "MIT",
     "authors": [

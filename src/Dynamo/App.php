@@ -8,7 +8,7 @@ abstract class App {
 	protected $injector;
 	protected $maxIterations = 10;
 
-	protected function __construct(Injector $injector) {
+	public function __construct(Injector $injector) {
 		$this->injector = $injector;
 	}
 

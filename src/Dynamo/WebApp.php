@@ -2,30 +2,35 @@
 namespace Dynamo;
 
 use DI\Injector,
+	Convey\Router,
 	http\Env\Request,
 	http\Env\Response,
 	http\Message;
 
 abstract class WebApp extends App {
-	protected $routeTable = [];
+	public $router, $request, $response;
 
-	protected function __construct(Injector $injector) {
+	public static function create() {
+		$injector = new Injector();
+		$injector->provide('injector', $injector);
+		$request = new Request();
+		$response = new Response();
+		$router = new Router();
+		return new static($injector, $router, $request, $response);
+	}
+
+	public function __construct(Injector $injector, Router $router = null, Request $request = null, /*Response*/ $response = null) {
 		$http = new \ReflectionExtension('http');
 		if(!version_compare($http->getVersion(), '2.0.0', '>=')) {
 			throw new \RuntimeException('You must have pecl http 2.0 or above!');
 		}
 
-		$injector->provide('request', new Request());
-		$injector->provide('response', new Response());
-		$this->injector = $injector;
-	}
+		$this->router = $router;
 
-	public function route($method, $path, callable $fn) {
-		$method = strtolower($method);
-		if(empty($this->routeTable[$method])) {
-			$this->routeTable[$method] = [];
-		}
-		$this->routeTable[$method][$path] = $fn;
+		$injector->provide('request', $request);
+		$injector->provide('response', $response);
+		$injector->provide('router', $this->router);
+		$this->injector = $injector;
 	}
 
 	public function run() {
@@ -33,10 +38,10 @@ abstract class WebApp extends App {
 		$this->register(function (Request $request, Injector $injector) use($self) {
 			$m = strtolower($request->getRequestMethod());
 			$p = $request->getRequestUrl();
-			if(key_exists($m, $self->routeTable) && key_exists($p, $self->routeTable[$m])) {
-				$fn = $injector->inject($self->routeTable[$m][$p]);
-				$fn();
-			}
+			list($args, $cb) = $self->router->route($m, $p);
+			$self->injector->provide('params', $args);
+			$fn = $self->injector->inject($cb);
+			$fn();
 		});
 
 		parent::run();

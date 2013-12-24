@@ -35,7 +35,7 @@ class SampleApp extends WebApp {
 			));
 		});
 
-		$this->route('get', '/', function (Response $response) {
+		$this->router->get('/', function (Response $response) {
 			$body = new Body();
 			$body->append('Hello, world!');
 			$response->setBody($body);
