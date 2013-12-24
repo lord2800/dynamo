@@ -35,7 +35,7 @@ abstract class App {
 		foreach($this->queue as $middleware) {
 			$boundFn = $this->injector->inject($middleware);
 			$result = $boundFn();
-			if(is_a($result, 'Generator')) {
+			if($result instanceof \Generator) {
 				array_unshift($generators, $result);
 			}
 		}
