@@ -4,7 +4,7 @@ php:
 
 env:
   global:
-    secure: "CVdgvBm1XI2itnZQGakTnq6rmwOfYv8j9E7MKy5dF0gQ46kRVNmoMKSQqaRvIVsnXbv+BVrL6Qa+1BGJUd74n2RJOad5c0ikfxRR7Mt9/x3MyF88ru4dL85qWx4bU6kyq85FkF/7hUtLdaOk/iL1HdqBk842Kx45zdhXD9xL7Z4="
+    secure: "mj8Ptc6Mx0tYQy7qFVMrPThHGhXETdYYk1ElwohKKweVGrIbEdIJA7Fy9GBckq4SjDyxtRJHoSCKznc8l78U06vWnFqJUB4IVGvqfBTneRTHx2ksErJz31TBm6aW6pf7sgHHKoeF5pJ/6sjCq1mlUyAdt7LqfT/OflHbnddYS1I="
 
 install:
  - echo "yes\n" | pecl install pecl_http
