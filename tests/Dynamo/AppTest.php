@@ -44,4 +44,16 @@ class AppTest extends PHPUnit_Framework_TestCase {
 		$this->app->register(function () { while(true) yield; });
 		$this->app->run();
 	}
+
+	public function testShouldRemoveMiddlewareEarlyIfTheyEndBeforeOthers() {
+		$calledCount = 0;
+		$calledCount2 = 0;
+
+		$this->app->register(function () use(&$calledCount) { $calledCount++; yield; $calledCount++; yield; $calledCount++; });
+		$this->app->register(function () use(&$calledCount2) { $calledCount2++; yield; $calledCount2++; });
+		$this->app->run();
+
+		$this->assertEquals(3, $calledCount);
+		$this->assertEquals(2, $calledCount2);
+	}
 }

@@ -10,6 +10,10 @@ use DI\Injector,
 abstract class WebApp extends App {
 	public $router, $request, $response;
 
+	// This method is inherently untestable--http\Env\Response requires that you are able
+	// to capture the response body, and that is just not possible in PHPUnit because it
+	// starts output immediately
+	/** @codeCoverageIgnore */
 	public static function create() {
 		$injector = new Injector();
 		$injector->provide('injector', $injector);
@@ -22,7 +26,10 @@ abstract class WebApp extends App {
 	public function __construct(Injector $injector, Router $router = null, Request $request = null, /*Response*/ $response = null) {
 		$http = new \ReflectionExtension('http');
 		if(!version_compare($http->getVersion(), '2.0.0', '>=')) {
+			// can't test this exception due to it being impossible to make this fail
+			// @codeCoverageIgnoreStart
 			throw new \RuntimeException('You must have pecl http 2.0 or above!');
+			// @codeCoverageIgnoreEnd
 		}
 
 		$this->router = $router;
