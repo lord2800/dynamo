@@ -2,6 +2,10 @@ language: php
 php:
  - 5.5
 
+env:
+  global:
+    secure: "CVdgvBm1XI2itnZQGakTnq6rmwOfYv8j9E7MKy5dF0gQ46kRVNmoMKSQqaRvIVsnXbv+BVrL6Qa+1BGJUd74n2RJOad5c0ikfxRR7Mt9/x3MyF88ru4dL85qWx4bU6kyq85FkF/7hUtLdaOk/iL1HdqBk842Kx45zdhXD9xL7Z4="
+
 install:
  - echo "yes\n" | pecl install pecl_http
  - sed -E "s/extension=.(raphf|http|propro).so.//g" ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini > ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
@@ -12,4 +16,8 @@ install:
  - npm install -g grunt-cli
  - npm install
 
-script: grunt test
+script:
+ - grunt test
+
+after_success:
+ - grunt gh-pages
