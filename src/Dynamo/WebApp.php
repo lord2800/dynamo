@@ -8,6 +8,10 @@ use DI\Injector,
 abstract class WebApp extends App {
 	public $router, $request, $response;
 
+	/**
+	  * Not worth testing this because it's a static method that creates an instance
+	  */
+	/** @codeCoverageIgnore */
 	public static function create() {
 		$injector = new Injector();
 		$injector->provide('injector', $injector);

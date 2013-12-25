@@ -8,22 +8,22 @@ class CORS {
 	private $domains, $methods, $allowHeaders, $exposeHeaders, $ttl, $credentials;
 	public function __construct($domains = [], $credentials = false, $methods = [], $allowHeaders = [], $exposeHeaders = [], $ttl = 3500) {
 		if(empty($domains)) {
-			throw new \ArgumentException('You must supply at least one domain!');
+			throw new \InvalidArgumentException('You must supply at least one domain!');
 		}
 		$this->domains = is_array($domains) ? $domains : [$domains];
 		$this->credentials = $credentials;
-		$this->methods = $methods;
-		$this->allowHeaders = $allowHeaders;
-		$this->exposeHeaders = $exposeHeaders;
-		$this->ttl = $ttl;
+		$this->methods = is_array($methods) ? $methods : [$methods];
+		$this->allowHeaders = is_array($allowHeaders) ? $allowHeaders : [$allowHeaders];
+		$this->exposeHeaders = is_array($exposeHeaders) ? $exposeHeaders : [$exposeHeaders];
+		$this->ttl = (int)$ttl;
 	}
 	public function __invoke(HttpRequest $request, HttpResponse $response) {
 		$origin = $request->getHeader('Origin');
 		if(!empty($origin)) {
 			if(in_array($origin, $this->domains)) {
 				$response->setHeader('Access-Control-Allow-Origin', $origin);
-				if($this->credentials) {
-					$response->setHeader('Access-Control-Allow-Credentials', $this->credentials);
+				if(!!$this->credentials) {
+					$response->setHeader('Access-Control-Allow-Credentials', !!$this->credentials ? 'true' : 'false');
 				}
 				if(!empty($this->methods)) {
 					$response->setHeader('Access-Control-Allow-Methods', implode(', ', $this->methods));
