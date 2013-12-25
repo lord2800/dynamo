@@ -20,11 +20,7 @@ class SampleApp extends WebApp {
 			$response->addHeader('X-Duration', ($end - $start) * 1000);
 		});
 
-		$this->register(function (Request $request, Response $response) {
-			if($request->getHeader('Origin')) {
-				$response->setHeader('Access-Control-Allow-Origin', $request->getHeader('Origin'));
-			}
-		});
+		$this->register(new Dynamo\Middleware\CORS(['http://localhost:8080']));
 
 		$this->register(function ($logger, Request $request, Response $response) {
 			yield;

@@ -8,7 +8,7 @@
     "require-dev": {
         "phpunit/phpunit": "dev-master",
         "squizlabs/php_codesniffer": "dev-master",
-        "scrutinizer/php-analyzer": "dev-master",
+        "phpdocumentor/phpdocumentor": "dev-master",
         "ext-http": ">=2.0.0",
         "lord2800/convey": "master@dev"
     },

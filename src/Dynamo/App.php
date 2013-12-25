@@ -5,9 +5,21 @@ use DI\Injector;
 
 abstract class App {
 	private $queue;
+	/**
+	  * @var \DI\Injector The injector for this application
+	  * @see http://lord2800.github.io/di.php/coverage The DI\Injector Code Coverage results
+	  */
 	protected $injector;
+	/**
+	  * @var int The maximum number of loops through the generators after the first pass
+	  */
 	protected $maxIterations = 10;
 
+	/**
+	  * Generally you don't want to use this, and instead want to use the
+	  * static create method.
+	  * @param \DI\Injector The injector for the application
+	  */
 	public function __construct(Injector $injector) {
 		$this->injector = $injector;
 	}

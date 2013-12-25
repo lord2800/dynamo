@@ -4,9 +4,10 @@ php:
 
 env:
   global:
-    secure: "mj8Ptc6Mx0tYQy7qFVMrPThHGhXETdYYk1ElwohKKweVGrIbEdIJA7Fy9GBckq4SjDyxtRJHoSCKznc8l78U06vWnFqJUB4IVGvqfBTneRTHx2ksErJz31TBm6aW6pf7sgHHKoeF5pJ/6sjCq1mlUyAdt7LqfT/OflHbnddYS1I="
+   - secure: mo27nTmvQ4Gxrp5Wxqp1X2/G7JRTJxljBVGpEQHhgwkyZsdRYuO+kALJRxeV6k6/6mND6FZnONzzCGzKmMCgH5/8fI/Xpox+RuqUG03L8P0yjIrl6azk/gXsZUoP1/yUKmMFJsAknJUeDNMt7NDZnfuvgHRZowawdqVPklBvIjI=
 
 install:
+ - sudo apt-get install graphviz
  - echo "yes\n" | pecl install pecl_http
  - sed -E "s/extension=.(raphf|http|propro).so.//g" ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini > ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
  - echo 'extension="raphf.so"' >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
@@ -20,4 +21,4 @@ script:
  - grunt test
 
 after_success:
- - grunt gh-pages
+ - grunt docs

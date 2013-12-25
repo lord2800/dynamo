@@ -1,6 +1,7 @@
 module.exports = function (grunt) {
 	['phplint', 'phpcs', 'php-analyzer', 'phpunit', 'php', 'parallelize', 'gh-pages', 'contrib-watch']
 		.forEach(function (name) { grunt.loadNpmTasks('grunt-' + name); });
+	grunt.loadTasks('tasks');
 
 	grunt.initConfig({
 		parallelize: { phplint: { app: require('os').cpus().length } },
@@ -27,6 +28,9 @@ module.exports = function (grunt) {
 		},
 		php: {
 			app: { options: { port: 8080, base: '.', open: true, keepalive: false } }
+		},
+		process: {
+			'vendor/bin/phpdoc.php': {}
 		},
 		'gh-pages': {
 			options: {
@@ -55,7 +59,9 @@ module.exports = function (grunt) {
 	});
 
 	grunt.registerTask('precommit', ['parallelize:phplint', 'phpcs', 'phpunit']);
+	grunt.registerTask('phpdoc', ['process:vendor/bin/phpdoc.php']);
 	grunt.registerTask('test', ['phplint', 'phpcs', /*'php_analyzer',*/ 'phpunit']);
 	grunt.registerTask('serve', ['php', 'watch']);
+	grunt.registerTask('docs', ['phpdoc', 'gh-pages']);
 	grunt.registerTask('default', ['test']);
 };
