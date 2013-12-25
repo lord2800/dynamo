@@ -47,47 +47,47 @@
 <polygon fill="none" stroke="black" points="248,-222 194,-222 194,-186 248,-186 248,-222"/>
 <text text-anchor="middle" x="221" y="-201.1" font-family="Times Roman,serif" font-size="11.00">CORS</text>
 </g>
-<!-- \\Dynamo\\App -->
-<g id="node5" class="node"><title>\\Dynamo\\App</title>
-<polygon fill="none" stroke="black" points="101,-168 25,-168 25,-132 101,-132 101,-168"/>
-<text text-anchor="start" x="33" y="-155.433" font-family="Times Roman,serif" font-size="11.00">«abstract»</text>
-<text text-anchor="start" x="52" y="-142.233" font-family="Times Roman,serif" font-size="11.00">App</text>
-</g>
 <!-- \\Dynamo\\Proxy -->
-<g id="node6" class="node"><title>\\Dynamo\\Proxy</title>
-<polygon fill="none" stroke="black" points="90,-87 36,-87 36,-51 90,-51 90,-87"/>
-<text text-anchor="middle" x="63" y="-66.1" font-family="Times Roman,serif" font-size="11.00">Proxy</text>
+<g id="node5" class="node"><title>\\Dynamo\\Proxy</title>
+<polygon fill="none" stroke="black" points="90,-141 36,-141 36,-105 90,-105 90,-141"/>
+<text text-anchor="middle" x="63" y="-120.1" font-family="Times Roman,serif" font-size="11.00">Proxy</text>
 </g>
 <!-- \\Dynamo\\HttpResponse -->
-<g id="node7" class="node"><title>\\Dynamo\\HttpResponse</title>
-<polygon fill="none" stroke="black" points="267,-114 175,-114 175,-78 267,-78 267,-114"/>
-<text text-anchor="middle" x="221" y="-93.1" font-family="Times Roman,serif" font-size="11.00">HttpResponse</text>
+<g id="node6" class="node"><title>\\Dynamo\\HttpResponse</title>
+<polygon fill="none" stroke="black" points="267,-168 175,-168 175,-132 267,-132 267,-168"/>
+<text text-anchor="middle" x="221" y="-147.1" font-family="Times Roman,serif" font-size="11.00">HttpResponse</text>
 </g>
 <!-- \\Dynamo\\HttpResponse&#45;&gt;\\Dynamo\\Proxy -->
 <g id="edge5" class="edge"><title>\\Dynamo\\HttpResponse&#45;&gt;\\Dynamo\\Proxy</title>
-<path fill="none" stroke="black" d="M174.449,-88.0451C150.875,-84.0166 122.634,-79.1906 100.479,-75.4047"/>
-<polygon fill="none" stroke="black" points="100.901,-71.926 90.4538,-73.6915 99.7213,-78.826 100.901,-71.926"/>
+<path fill="none" stroke="black" d="M174.449,-142.045C150.875,-138.017 122.634,-133.191 100.479,-129.405"/>
+<polygon fill="none" stroke="black" points="100.901,-125.926 90.4538,-127.691 99.7213,-132.826 100.901,-125.926"/>
+</g>
+<!-- \\Dynamo\\HttpRequest -->
+<g id="node7" class="node"><title>\\Dynamo\\HttpRequest</title>
+<polygon fill="none" stroke="black" points="263,-114 179,-114 179,-78 263,-78 263,-114"/>
+<text text-anchor="middle" x="221" y="-93.1" font-family="Times Roman,serif" font-size="11.00">HttpRequest</text>
+</g>
+<!-- \\Dynamo\\HttpRequest&#45;&gt;\\Dynamo\\Proxy -->
+<g id="edge7" class="edge"><title>\\Dynamo\\HttpRequest&#45;&gt;\\Dynamo\\Proxy</title>
+<path fill="none" stroke="black" d="M178.243,-103.307C153.882,-107.47 123.651,-112.636 100.265,-116.632"/>
+<polygon fill="none" stroke="black" points="99.641,-113.188 90.3735,-118.322 100.82,-120.088 99.641,-113.188"/>
 </g>
 <!-- \\Dynamo\\WebApp -->
 <g id="node8" class="node"><title>\\Dynamo\\WebApp</title>
-<polygon fill="none" stroke="black" points="259,-168 183,-168 183,-132 259,-132 259,-168"/>
-<text text-anchor="start" x="191" y="-155.433" font-family="Times Roman,serif" font-size="11.00">«abstract»</text>
-<text text-anchor="start" x="198" y="-142.233" font-family="Times Roman,serif" font-size="11.00">WebApp</text>
+<polygon fill="none" stroke="black" points="259,-60 183,-60 183,-24 259,-24 259,-60"/>
+<text text-anchor="start" x="191" y="-47.4333" font-family="Times Roman,serif" font-size="11.00">«abstract»</text>
+<text text-anchor="start" x="198" y="-34.2333" font-family="Times Roman,serif" font-size="11.00">WebApp</text>
+</g>
+<!-- \\Dynamo\\App -->
+<g id="node9" class="node"><title>\\Dynamo\\App</title>
+<polygon fill="none" stroke="black" points="101,-60 25,-60 25,-24 101,-24 101,-60"/>
+<text text-anchor="start" x="33" y="-47.4333" font-family="Times Roman,serif" font-size="11.00">«abstract»</text>
+<text text-anchor="start" x="52" y="-34.2333" font-family="Times Roman,serif" font-size="11.00">App</text>
 </g>
 <!-- \\Dynamo\\WebApp&#45;&gt;\\Dynamo\\App -->
-<g id="edge7" class="edge"><title>\\Dynamo\\WebApp&#45;&gt;\\Dynamo\\App</title>
-<path fill="none" stroke="black" d="M182.349,-150C161.037,-150 134.371,-150 111.652,-150"/>
-<polygon fill="none" stroke="black" points="111.526,-146.5 101.526,-150 111.526,-153.5 111.526,-146.5"/>
-</g>
-<!-- \\Dynamo\\HttpRequest -->
-<g id="node9" class="node"><title>\\Dynamo\\HttpRequest</title>
-<polygon fill="none" stroke="black" points="263,-60 179,-60 179,-24 263,-24 263,-60"/>
-<text text-anchor="middle" x="221" y="-39.1" font-family="Times Roman,serif" font-size="11.00">HttpRequest</text>
-</g>
-<!-- \\Dynamo\\HttpRequest&#45;&gt;\\Dynamo\\Proxy -->
-<g id="edge9" class="edge"><title>\\Dynamo\\HttpRequest&#45;&gt;\\Dynamo\\Proxy</title>
-<path fill="none" stroke="black" d="M178.243,-49.3066C153.882,-53.4695 123.651,-58.6356 100.265,-62.632"/>
-<polygon fill="none" stroke="black" points="99.641,-59.1877 90.3735,-64.3222 100.82,-66.0877 99.641,-59.1877"/>
+<g id="edge9" class="edge"><title>\\Dynamo\\WebApp&#45;&gt;\\Dynamo\\App</title>
+<path fill="none" stroke="black" d="M182.349,-42C161.037,-42 134.371,-42 111.652,-42"/>
+<polygon fill="none" stroke="black" points="111.526,-38.5001 101.526,-42 111.526,-45.5001 111.526,-38.5001"/>
 </g>
 </g>
 </svg>
