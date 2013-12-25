@@ -7,16 +7,13 @@ class MockWebApp extends WebApp {
 	public function getInjector() { return $this->injector; }
 }
 
-// TODO this is horrible!
-class FakeResponse {}
-
 class WebAppTest extends PHPUnit_Framework_TestCase {
 	private $app;
 
 	public function setUp() {
 		$router = $this->getMock('Convey\\Router', ['route']);
-		$request = $this->getMock('http\\Env\\Request');
-		$response = new FakeResponse();
+		$request = $this->getMock('Dynamo\\HttpRequest');
+		$response = $this->getMockBuilder('Dynamo\\HttpResponse')->disableOriginalConstructor()->getMock();
 		$injector = new DI\Injector();
 
 		$injector->provide('injector', $injector);
@@ -29,8 +26,8 @@ class WebAppTest extends PHPUnit_Framework_TestCase {
 		$response = $this->app->getInjector()->retrieve('response');
 		$router = $this->app->getInjector()->retrieve('router');
 
-		$this->assertInstanceOf('http\\Env\\Request', $request);
-		$this->assertInstanceOf('FakeResponse', $response);
+		$this->assertInstanceOf('Dynamo\\HttpRequest', $request);
+		$this->assertInstanceOf('Dynamo\\HttpResponse', $response);
 		$this->assertInstanceOf('Convey\\Router', $router);
 	}
 
@@ -48,6 +45,6 @@ class WebAppTest extends PHPUnit_Framework_TestCase {
 		$response = $this->app->run();
 		$this->assertTrue($called);
 		$this->assertNotNull($response);
-		$this->assertInstanceOf('FakeResponse', $response);
+		$this->assertInstanceOf('Dynamo\\HttpResponse', $response);
 	}
 }

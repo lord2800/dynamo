@@ -1,8 +1,8 @@
 <?php
 namespace Dynamo\Middleware;
 
-use http\Env\Request,
-	http\Env\Response;
+use Dynamo\HttpRequest,
+	Dynamo\HttpResponse;
 
 class CORS {
 	private $domains, $methods, $allowHeaders, $exposeHeaders, $ttl, $credentials;
@@ -17,7 +17,7 @@ class CORS {
 		$this->exposeHeaders = $exposeHeaders;
 		$this->ttl = $ttl;
 	}
-	public function __invoke(Request $request, Response $response) {
+	public function __invoke(HttpRequest $request, HttpResponse $response) {
 		$origin = $request->getHeader('Origin');
 		if(!empty($origin)) {
 			if(in_array($origin, $this->domains)) {
