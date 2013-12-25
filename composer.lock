@@ -11,7 +11,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/lord2800/di.php.git",
-                "reference": "92873cad2348451052cf2f73cccec38dcee2f104"
+                "reference": "7b436efacf6547aca0ee00b45229a80d4675c387"
             },
             "require-dev": {
                 "phpdocumentor/phpdocumentor": "dev-master",
@@ -34,7 +34,7 @@
                 }
             ],
             "description": "A dependency injector, rather than a container or service locator.",
-            "time": "2013-12-25 19:31:13"
+            "time": "2013-12-25 23:11:45"
         }
     ],
     "packages-dev": [
@@ -487,7 +487,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/lord2800/convey.git",
-                "reference": "4dea3bb93ac7010faadfe43500cd60e9404533b4"
+                "reference": "ef1b04db67fe5ae0c882d15819c3c09ea20a90a5"
             },
             "require-dev": {
                 "phpdocumentor/phpdocumentor": "dev-master",
@@ -510,7 +510,7 @@
                 }
             ],
             "description": "A micro-routing utility based on PCRE and Express",
-            "time": "2013-12-25 20:02:33"
+            "time": "2013-12-25 23:11:41"
         },
         {
             "name": "monolog/monolog",
