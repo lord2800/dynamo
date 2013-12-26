@@ -13,13 +13,7 @@ class SampleApp extends WebApp {
 			return function ($msg) { file_put_contents('php://stderr', $msg); };
 		});
 
-		$this->register(function (Response $response) {
-			$start = microtime(true);
-			yield;
-			$end = microtime(true);
-			$response->addHeader('X-Duration', ($end - $start) * 1000);
-		});
-
+		$this->register(new Dynamo\Middleware\RequestDuration());
 		$this->register(new Dynamo\Middleware\CORS(['http://localhost:8080']));
 
 		$this->register(function ($logger, Request $request, Response $response) {
