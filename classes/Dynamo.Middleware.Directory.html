@@ -3,7 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 <meta charset="utf-8">
-<title>API Documentation » \Dynamo\Proxy</title>
+<title>API Documentation » \Dynamo\Middleware\Directory</title>
 <meta name="author" content="Mike van Riel">
 <meta name="description" content="">
 <link href="../css/template.css" rel="stylesheet" media="all">
@@ -61,18 +61,10 @@
 <li class="nav-header">
 <i title="Methods" class="icon-custom icon-method"></i> Methods
                     <ul>
-<li class="method public "><a href="#method___call" title="__call() :: "><span class="description">__call()
-        </span><pre>__call()</pre></a></li>
 <li class="method public "><a href="#method___construct" title="__construct() :: "><span class="description">__construct()
         </span><pre>__construct()</pre></a></li>
-<li class="method public "><a href="#method___get" title="__get() :: "><span class="description">__get()
-        </span><pre>__get()</pre></a></li>
-<li class="method public "><a href="#method___isset" title="__isset() :: "><span class="description">__isset()
-        </span><pre>__isset()</pre></a></li>
-<li class="method public "><a href="#method___set" title="__set() :: "><span class="description">__set()
-        </span><pre>__set()</pre></a></li>
-<li class="method public "><a href="#method___unset" title="__unset() :: "><span class="description">__unset()
-        </span><pre>__unset()</pre></a></li>
+<li class="method public "><a href="#method___invoke" title="__invoke() :: "><span class="description">__invoke()
+        </span><pre>__invoke()</pre></a></li>
 </ul>
 </li>
 <li class="nav-header">
@@ -81,20 +73,26 @@
 </li>
 <li class="nav-header private">» Private
                     <ul>
-<li class="property private "><a href="#property_inst" title="$inst() :: "><span class="description"></span><pre>$inst</pre></a></li>
-<li class="property private "><a href="#property_methods" title="$methods() :: "><span class="description"></span><pre>$methods</pre></a></li>
+<li class="property private "><a href="#property_filter" title="$filter() :: "><span class="description"></span><pre>$filter</pre></a></li>
+<li class="property private "><a href="#property_finfo" title="$finfo() :: "><span class="description"></span><pre>$finfo</pre></a></li>
+<li class="property private "><a href="#property_hasIndex" title="$hasIndex() :: "><span class="description"></span><pre>$hasIndex</pre></a></li>
+<li class="property private "><a href="#property_index" title="$index() :: "><span class="description"></span><pre>$index</pre></a></li>
+<li class="property private "><a href="#property_path" title="$path() :: "><span class="description"></span><pre>$path</pre></a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="span8">
-<a id="\Dynamo\Proxy"></a><ul class="breadcrumb">
+<a id="\Dynamo\Middleware\Directory"></a><ul class="breadcrumb">
 <li>
 <a href="../index.html"><i title="Classes" class="icon-custom icon-class"></i></a><span class="divider">\</span>
 </li>
 <li><a href="../namespaces/Dynamo.html">Dynamo</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Dynamo.Middleware.html">Middleware</a>
+</li>
 <li class="active">
-<span class="divider">\</span><a href="../classes/Dynamo.Proxy.html">Proxy</a>
+<span class="divider">\</span><a href="../classes/Dynamo.Middleware.Directory.html">Directory</a>
 </li>
 </ul>
 <div class="element class">
@@ -103,79 +101,36 @@
 <div class="long_description"></div>
 <h3>
 <i title="Methods" class="icon-custom icon-method"></i> Methods</h3>
-<a id="method___call"></a><div class="element clickable method public method___call" data-toggle="collapse" data-target=".method___call .collapse" title="public">
-<h2>__call()
-        </h2>
-<pre>__call($name, $arguments) </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$name</h4></div>
-<div class="subelement argument"><h4>$arguments</h4></div>
-</div></div>
-</div>
 <a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse" title="public">
 <h2>__construct()
         </h2>
-<pre>__construct($className) </pre>
+<pre>__construct($path, callable $filter<code> = null</code>, $index<code> = false</code>) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$className</h4></div>
+<div class="subelement argument"><h4>$path</h4></div>
+<div class="subelement argument"><h4>$filter</h4></div>
+<div class="subelement argument"><h4>$index</h4></div>
 </div></div>
 </div>
-<a id="method___get"></a><div class="element clickable method public method___get" data-toggle="collapse" data-target=".method___get .collapse" title="public">
-<h2>__get()
+<a id="method___invoke"></a><div class="element clickable method public method___invoke" data-toggle="collapse" data-target=".method___invoke .collapse" title="public">
+<h2>__invoke()
         </h2>
-<pre>__get($name) </pre>
+<pre>__invoke(\Dynamo\HttpRequest $request, \Dynamo\HttpResponse $response) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$name</h4></div>
-</div></div>
-</div>
-<a id="method___isset"></a><div class="element clickable method public method___isset" data-toggle="collapse" data-target=".method___isset .collapse" title="public">
-<h2>__isset()
-        </h2>
-<pre>__isset($name) </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$name</h4></div>
-</div></div>
-</div>
-<a id="method___set"></a><div class="element clickable method public method___set" data-toggle="collapse" data-target=".method___set .collapse" title="public">
-<h2>__set()
-        </h2>
-<pre>__set($name, $value) </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$name</h4></div>
-<div class="subelement argument"><h4>$value</h4></div>
-</div></div>
-</div>
-<a id="method___unset"></a><div class="element clickable method public method___unset" data-toggle="collapse" data-target=".method___unset .collapse" title="public">
-<h2>__unset()
-        </h2>
-<pre>__unset($name) </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$name</h4></div>
+<div class="subelement argument"><h4>$request</h4></div>
+<div class="subelement argument"><h4>$response</h4></div>
 </div></div>
 </div>
 <h3>
 <i title="Properties" class="icon-custom icon-property"></i> Properties</h3>
-<a id="property_inst"> </a><div class="element clickable property private property_inst" data-toggle="collapse" data-target=".property_inst .collapse" title="private">
-<h2>$inst</h2>
-<pre>$inst </pre>
+<a id="property_filter"> </a><div class="element clickable property private property_filter" data-toggle="collapse" data-target=".property_filter .collapse" title="private">
+<h2>$filter</h2>
+<pre>$filter </pre>
 <div class="row collapse"><div class="detail-description">
 <h3>Default</h3>
 <div class="subelement argument"></div>
@@ -183,12 +138,42 @@
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="property_methods"> </a><div class="element clickable property private property_methods" data-toggle="collapse" data-target=".property_methods .collapse" title="private">
-<h2>$methods</h2>
-<pre>$methods </pre>
+<a id="property_finfo"> </a><div class="element clickable property private property_finfo" data-toggle="collapse" data-target=".property_finfo .collapse" title="private">
+<h2>$finfo</h2>
+<pre>$finfo </pre>
 <div class="row collapse"><div class="detail-description">
 <h3>Default</h3>
-<div class="subelement argument"><code>array()</code></div>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_hasIndex"> </a><div class="element clickable property private property_hasIndex" data-toggle="collapse" data-target=".property_hasIndex .collapse" title="private">
+<h2>$hasIndex</h2>
+<pre>$hasIndex </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_index"> </a><div class="element clickable property private property_index" data-toggle="collapse" data-target=".property_index .collapse" title="private">
+<h2>$index</h2>
+<pre>$index </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_path"> </a><div class="element clickable property private property_path" data-toggle="collapse" data-target=".property_path .collapse" title="private">
+<h2>$path</h2>
+<pre>$path </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
 </div></div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>

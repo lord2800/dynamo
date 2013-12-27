@@ -31,7 +31,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">58</span></a></li>
+                <span class="label label-info">71</span></a></li>
 <li><a href="markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -54,12 +54,13 @@
 <button class="btn critical">Critical</button><button class="btn error">Error</button><button class="btn notice">Notice</button>
 </div></li>
 <li class="nav-header">Navigation</li>
-<li><a href="#HttpRequest.php"><i class="icon-file"></i>HttpRequest.php</a></li>
-<li><a href="#HttpResponse.php"><i class="icon-file"></i>HttpResponse.php</a></li>
+<li><a href="#Middleware/Directory.php"><i class="icon-file"></i>Middleware/Directory.php</a></li>
 <li><a href="#Middleware/CORS.php"><i class="icon-file"></i>Middleware/CORS.php</a></li>
 <li><a href="#Middleware/RequestDuration.php"><i class="icon-file"></i>Middleware/RequestDuration.php</a></li>
-<li><a href="#WebApp.php"><i class="icon-file"></i>WebApp.php</a></li>
+<li><a href="#HttpRequest.php"><i class="icon-file"></i>HttpRequest.php</a></li>
+<li><a href="#HttpResponse.php"><i class="icon-file"></i>HttpResponse.php</a></li>
 <li><a href="#Proxy.php"><i class="icon-file"></i>Proxy.php</a></li>
+<li><a href="#WebApp.php"><i class="icon-file"></i>WebApp.php</a></li>
 <li><a href="#App.php"><i class="icon-file"></i>App.php</a></li>
 </ul></div>
 <div class="span8">
@@ -70,8 +71,8 @@
 <li>Compilation Errors</li>
 </ul>
 <div class="package-contents">
-<a name="HttpRequest.php" id="HttpRequest.php"></a><h3>
-<i class="icon-file"></i>HttpRequest.php<small style="float: right;padding-right: 10px;">3</small>
+<a name="Middleware/Directory.php" id="Middleware/Directory.php"></a><h3>
+<i class="icon-file"></i>Middleware/Directory.php<small style="float: right;padding-right: 10px;">11</small>
 </h3>
 <div><table class="table markers table-bordered">
 <thead><tr>
@@ -88,41 +89,52 @@
 <tr class="error">
 <td>error</td>
 <td>8</td>
-<td>No summary for class \Dynamo\HttpRequest</td>
+<td>No summary for class \Dynamo\Middleware\Directory</td>
 </tr>
 <tr class="error">
 <td>error</td>
 <td>9</td>
-<td>No summary for method __construct()</td>
-</tr>
-</tbody>
-</table></div>
-</div>
-<div class="package-contents">
-<a name="HttpResponse.php" id="HttpResponse.php"></a><h3>
-<i class="icon-file"></i>HttpResponse.php<small style="float: right;padding-right: 10px;">3</small>
-</h3>
-<div><table class="table markers table-bordered">
-<thead><tr>
-<th>Type</th>
-<th>Line</th>
-<th>Description</th>
-</tr></thead>
-<tbody>
-<tr class="error">
-<td>error</td>
-<td>0</td>
-<td>No summary was found for this file</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>8</td>
-<td>No summary for class \Dynamo\HttpResponse</td>
+<td>No summary for property $path</td>
 </tr>
 <tr class="error">
 <td>error</td>
 <td>9</td>
+<td>No summary for property $filter</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>9</td>
+<td>No summary for property $index</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>9</td>
+<td>No summary for property $hasIndex</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>9</td>
+<td>No summary for property $finfo</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>10</td>
+<td>Argument $path is missing from the Docblock of __construct()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>10</td>
+<td>Argument $index is missing from the Docblock of __construct()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>10</td>
 <td>No summary for method __construct()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>23</td>
+<td>No summary for method __invoke()</td>
 </tr>
 </tbody>
 </table></div>
@@ -251,8 +263,8 @@
 </table></div>
 </div>
 <div class="package-contents">
-<a name="WebApp.php" id="WebApp.php"></a><h3>
-<i class="icon-file"></i>WebApp.php<small style="float: right;padding-right: 10px;">8</small>
+<a name="HttpRequest.php" id="HttpRequest.php"></a><h3>
+<i class="icon-file"></i>HttpRequest.php<small style="float: right;padding-right: 10px;">3</small>
 </h3>
 <div><table class="table markers table-bordered">
 <thead><tr>
@@ -269,37 +281,51 @@
 <tr class="error">
 <td>error</td>
 <td>8</td>
-<td>No summary for class \Dynamo\WebApp</td>
+<td>No summary for class \Dynamo\HttpRequest</td>
 </tr>
 <tr class="error">
 <td>error</td>
 <td>9</td>
-<td>No summary for property $router</td>
+<td>No summary for method __construct()</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="HttpResponse.php" id="HttpResponse.php"></a><h3>
+<i class="icon-file"></i>HttpResponse.php<small style="float: right;padding-right: 10px;">5</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No summary was found for this file</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>8</td>
+<td>No summary for class \Dynamo\HttpResponse</td>
 </tr>
 <tr class="error">
 <td>error</td>
 <td>9</td>
-<td>No summary for property $request</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>9</td>
-<td>No summary for property $response</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>15</td>
-<td>No summary for method create()</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>24</td>
 <td>No summary for method __construct()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>41</td>
-<td>No summary for method run()</td>
+<td>10</td>
+<td>Argument $body is missing from the Docblock of setBody()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>10</td>
+<td>No summary for method setBody()</td>
 </tr>
 </tbody>
 </table></div>
@@ -409,6 +435,60 @@
 </table></div>
 </div>
 <div class="package-contents">
+<a name="WebApp.php" id="WebApp.php"></a><h3>
+<i class="icon-file"></i>WebApp.php<small style="float: right;padding-right: 10px;">8</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No summary was found for this file</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>8</td>
+<td>No summary for class \Dynamo\WebApp</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>9</td>
+<td>No summary for property $router</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>9</td>
+<td>No summary for property $request</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>9</td>
+<td>No summary for property $response</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>15</td>
+<td>No summary for method create()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>24</td>
+<td>No summary for method __construct()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>41</td>
+<td>No summary for method run()</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="package-contents">
 <a name="App.php" id="App.php"></a><h3>
 <i class="icon-file"></i>App.php<small style="float: right;padding-right: 10px;">7</small>
 </h3>
@@ -463,7 +543,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.2.0
 </a> and<br>
-            generated on 2013-12-26T05:06:05Z.<br></footer></div>
+            generated on 2013-12-27T21:02:28Z.<br></footer></div>
 </div>
 </body>
 </html>
