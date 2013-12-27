@@ -15,6 +15,7 @@ class SampleApp extends WebApp {
 
 		$this->register(new Dynamo\Middleware\RequestDuration());
 		$this->register(new Dynamo\Middleware\CORS(['http://localhost:8080']));
+		$this->register(new Dynamo\Middleware\Directory('src'));
 
 		$this->register(function ($logger, Request $request, Response $response) {
 			yield;

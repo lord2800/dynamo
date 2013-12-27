@@ -8,6 +8,6 @@ class RequestDuration {
 		$start = microtime(true);
 		yield;
 		$duration = microtime(true) - $start;
-		$response->setHeader('X-Request-Duration-MS', $duration * 1000);
+		$response->setHeader('X-Request-Duration', $duration * 1000);
 	}
 }

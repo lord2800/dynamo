@@ -9,6 +9,7 @@
         "phpunit/phpunit": "dev-master",
         "squizlabs/php_codesniffer": "dev-master",
         "phpdocumentor/phpdocumentor": "dev-master",
+        "mikey179/vfsStream": "dev-master",
         "ext-http": ">=2.0.0",
         "lord2800/convey": "master@dev"
     },

@@ -7,11 +7,11 @@
 		},
 		{
 			"follow_symlinks": true,
-			"path": "/Users/jhubbard/Projects/personal/di.php"
+			"path": "../di.php"
 		},
 		{
 			"follow_symlinks": true,
-			"path": "/Users/jhubbard/Projects/personal/convey"
+			"path": "../convey"
 		}
 	]
 }

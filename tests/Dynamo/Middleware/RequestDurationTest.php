@@ -11,7 +11,7 @@ class RequestDurationTest extends PHPUnit_Framework_TestCase {
 						->getMock();
 		$response->expects($this->once())
 				->method('setHeader')
-				->with($this->equalTo('X-Request-Duration-MS'), $this->greaterThan(0));
+				->with($this->equalTo('X-Request-Duration'), $this->greaterThan(0));
 
 		$duration($response)->next();
 	}
