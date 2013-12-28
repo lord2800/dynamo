@@ -21,17 +21,17 @@ class Directory {
 	}
 
 	public function __invoke(HttpRequest $request, HttpResponse $response) {
-		$path = $this->path . substr($request->getRequestUrl(), 1);
+		$path = $this->path . substr($request->getUrl(), 1);
 		$fn = $this->filter;
 		if($fn($path)) {
-			$response->setContentEncoding(1); // http\Env\Response::CONTENT_ENCODING_GZIP
+			$response->setContentEncoding(HttpResponse::GZIP);
 
 			if(is_dir($path) && $this->hasIndex) {
 				// serve the index of the specified path
 				$fn = $this->index;
 				$response->setContentType('text/html');
 				$response->setBody($fn($path));
-			} else {
+			} else if(is_file($path)) {
 				$response->setContentType($this->finfo->file($path, FILEINFO_MIME_TYPE));
 				$response->setBody(fopen($path, 'r'));
 			}

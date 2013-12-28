@@ -6,15 +6,15 @@
         "lord2800/di.php": "master@dev"
     },
     "require-dev": {
-        "phpunit/phpunit": "dev-master",
-        "squizlabs/php_codesniffer": "dev-master",
-        "phpdocumentor/phpdocumentor": "dev-master",
-        "mikey179/vfsStream": "dev-master",
-        "ext-http": ">=2.0.0",
+        "sabre/http": "master@dev",
+        "phpunit/phpunit": "master@dev",
+        "squizlabs/php_codesniffer": "master@dev",
+        "phpdocumentor/phpdocumentor": "master@dev",
+        "mikey179/vfsStream": "master@dev",
         "lord2800/convey": "master@dev"
     },
     "suggest": {
-        "ext-http": "PECL HTTP extension (required for Dynamo\\WebApp)",
+        "sabre/http": "HTTP request handling with full unit tests (required for Dynamo\\WebApp)",
         "lord2800/convey": "Lightweight flexible micro-router (required for Dynamo\\WebApp)"
     },
     "repositories": [

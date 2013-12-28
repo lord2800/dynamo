@@ -6,7 +6,10 @@ class CORSTest extends PHPUnit_Framework_TestCase {
 	public function testCorsRespondsToOrigin() {
 		$cors = new CORS('http://example.com');
 
-		$request = $this->getMock('Dynamo\\HttpRequest', ['getHeader']);
+		$request = $this->getMockBuilder('Dynamo\\HttpRequest')
+						->disableOriginalConstructor()
+						->setMethods(['getHeader'])
+						->getMock();
 		$request->expects($this->once())
 				->method('getHeader')
 				->with($this->equalTo('Origin'))
@@ -29,8 +32,10 @@ class CORSTest extends PHPUnit_Framework_TestCase {
 	public function testCorsRespondsToMultipleOriginDomains() {
 		$cors = new CORS(['http://example.com', 'http://example.org']);
 
-		$request = $this->getMock('Dynamo\\HttpRequest', ['getHeader']);
-
+		$request = $this->getMockBuilder('Dynamo\\HttpRequest')
+						->disableOriginalConstructor()
+						->setMethods(['getHeader'])
+						->getMock();
 		$request->expects($this->at(0))
 				->method('getHeader')
 				->with($this->equalTo('Origin'))
@@ -66,8 +71,10 @@ class CORSTest extends PHPUnit_Framework_TestCase {
 	public function testCorsHandlesAllArgumentsCorrectly() {
 		$cors = new CORS('http://example.com', true, 'X-Method', 'X-Response', 'X-Exposed', 500);
 
-		$request = $this->getMock('Dynamo\\HttpRequest', ['getHeader']);
-
+		$request = $this->getMockBuilder('Dynamo\\HttpRequest')
+						->disableOriginalConstructor()
+						->setMethods(['getHeader'])
+						->getMock();
 		$request->expects($this->at(0))
 				->method('getHeader')
 				->with($this->equalTo('Origin'))
@@ -104,7 +111,10 @@ class CORSTest extends PHPUnit_Framework_TestCase {
 	public function testCorsIgnoresUnknownDomains() {
 		$cors = new CORS('http://example.com');
 
-		$request = $this->getMock('Dynamo\\HttpRequest', ['getHeader']);
+		$request = $this->getMockBuilder('Dynamo\\HttpRequest')
+						->disableOriginalConstructor()
+						->setMethods(['getHeader'])
+						->getMock();
 		$request->expects($this->any())
 				->method('getHeader')
 				->with($this->equalTo('Origin'))
@@ -125,6 +135,11 @@ class CORSTest extends PHPUnit_Framework_TestCase {
 	  */
 	public function testEmptyDomainListShouldThrow() {
 		$cors = new CORS();
-		$cors($this->getMock('Dynamo\\HttpRequest', ['getHeader']), $this->getMock('Dynamo\\HttpResponse', ['setHeader']));
+		$request = $this->getMockBuilder('Dynamo\\HttpRequest')
+				->disableOriginalConstructor()
+				->setMethods(['getHeader'])
+				->getMock();
+
+		$cors($request, $this->getMock('Dynamo\\HttpResponse', ['setHeader']));
 	}
 }

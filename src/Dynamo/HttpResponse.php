@@ -2,19 +2,32 @@
 namespace Dynamo;
 
 /**
-  * This class is untestable because http\Env\Response can't be tested
+  * This class is covered by Sabre's own tests
+  * TODO finish covering the methods added to it
+  * TODO move to using a ResponseDecorator instead
   */
 /** @codeCoverageIgnore */
-class HttpResponse extends Proxy {
-	public function __construct() { parent::__construct('http\\Env\\Response'); }
-	public function setBody($body) {
-		if(is_string($body)) {
-			$b = new http\Message\Body();
-			$b->append($body);
-			$body = $b;
-		} else if(is_resource($body)) {
-			$body = new http\Message\Body($body);
+class HttpResponse extends \Sabre\HTTP\Response {
+	const NONE = 0;
+	const GZIP = 1;
+
+	public function __construct() {
+		parent::__construct();
+		static::setStatus(200);
+	}
+
+	public function setContentEncoding($encoding = self::NONE) {
+		if(!is_numeric($encoding) || $encoding < 0 || $encoding > 1) {
+			throw new \InvalidArgumentException('Invalid encoding type.');
 		}
-		parent::setBody($body);
+		if($encoding === self::GZIP) {
+			// TODO figure out how to gzip the stream directly as an output buffer
+		} else if($encoding === self::NONE) {
+			// TODO disable encoding
+		}
+	}
+
+	public function setContentType($type = 'text/plain') {
+		static::setHeader('Content-Type', $type);
 	}
 }

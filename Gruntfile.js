@@ -27,7 +27,7 @@ module.exports = function (grunt) {
 			}
 		},
 		php: {
-			app: { options: { port: 8080, base: '.', open: true, keepalive: false } }
+			app: { options: { port: 8080, base: '.', keepalive: false, router: 'index.php' } }
 		},
 		process: {
 			'vendor/bin/phpdoc.php': {}

@@ -3,33 +3,30 @@
 require('vendor/autoload.php');
 
 use Dynamo\WebApp,
-	http\Env\Request,
-	http\Env\Response,
-	http\Message\Body;
+	Dynamo\HttpRequest,
+	Dynamo\HttpResponse;
 
 class SampleApp extends WebApp {
 	public function config() {
 		$this->injector->provide('logger', function () {
-			return function ($msg) { file_put_contents('php://stderr', $msg); };
+			return function ($msg) { file_put_contents('php://stderr', $msg . PHP_EOL); };
 		});
 
 		$this->register(new Dynamo\Middleware\RequestDuration());
 		$this->register(new Dynamo\Middleware\CORS(['http://localhost:8080']));
 		$this->register(new Dynamo\Middleware\Directory('src'));
 
-		$this->register(function ($logger, Request $request, Response $response) {
+		$this->register(function ($logger, HttpRequest $request, HttpResponse $response) {
 			yield;
 			$logger(sprintf('[%s] url: %s response: %d',
 				(new \DateTime())->format(\DateTime::W3C),
-				$request->getRequestUrl(),
-				$response->getResponseCode()
+				$request->getUrl(),
+				$response->getStatus()
 			));
 		});
 
-		$this->router->get('/', function (Response $response) {
-			$body = new Body();
-			$body->append('Hello, world!');
-			$response->setBody($body);
+		$this->router->get('/', function (HttpResponse $response) {
+			$response->setBody('Hello, world!');
 		});
 	}
 }

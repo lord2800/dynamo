@@ -12,9 +12,12 @@ class DirectoryTest extends PHPUnit_Framework_TestCase {
 	public function testDirectoryShouldServeFilesInsideIt() {
 		$directory = new Directory(vfsStream::url('docroot'));
 
-		$request = $this->getMock('Dynamo\\HttpRequest', ['getRequestUrl']);
+		$request = $this->getMockBuilder('Dynamo\\HttpRequest')
+						->disableOriginalConstructor()
+						->setMethods(['getUrl'])
+						->getMock();
 		$request->expects($this->once())
-				->method('getRequestUrl')
+				->method('getUrl')
 				->will($this->returnValue('/body.txt'));
 
 		$response = $this->getMockBuilder('Dynamo\\HttpResponse')
@@ -30,8 +33,7 @@ class DirectoryTest extends PHPUnit_Framework_TestCase {
 		$response->expects($this->once())
 				 ->method('setBody')
 				 ->with($this->callback(function ($in) {
-				 	rewind($in);
-				 	return (is_resource($in)) && (stream_get_contents($in) === 'hello, world');
+					return (is_resource($in)) && (rewind($in) && stream_get_contents($in) === 'hello, world');
 				 }));
 
 		$directory($request, $response);
@@ -40,9 +42,12 @@ class DirectoryTest extends PHPUnit_Framework_TestCase {
 	public function testDirectoryShouldServeTheIndexIfNotAFile() {
 		$directory = new Directory(vfsStream::url('docroot'), null, function () { return 'hello, world'; });
 
-		$request = $this->getMock('Dynamo\\HttpRequest', ['getRequestUrl']);
+		$request = $this->getMockBuilder('Dynamo\\HttpRequest')
+						->disableOriginalConstructor()
+						->setMethods(['getUrl'])
+						->getMock();
 		$request->expects($this->once())
-				->method('getRequestUrl')
+				->method('getUrl')
 				->will($this->returnValue('/'));
 
 		$response = $this->getMockBuilder('Dynamo\\HttpResponse')
@@ -58,7 +63,7 @@ class DirectoryTest extends PHPUnit_Framework_TestCase {
 		$response->expects($this->once())
 				 ->method('setBody')
 				 ->with($this->callback(function ($in) {
-				 	return $in === 'hello, world';
+					return (is_string($in)) && ($in === 'hello, world');
 				 }));
 
 		$directory($request, $response);
