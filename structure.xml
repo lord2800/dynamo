@@ -1,363 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project title="API Documentation" version="2.2.0&#10;">
   <partials/>
-  <file path="Middleware/Directory.php" generated-path="Middleware.Directory.html" hash="f98a22c99e6eb8c80a258067f67a27de" package="Default">
-    <docblock line="0">
-      <description></description>
-      <long-description></long-description>
-    </docblock>
-    <class final="false" abstract="false" namespace="Dynamo\Middleware" line="8" package="Default">
-      <extends/>
-      <name>Directory</name>
-      <full_name>\Dynamo\Middleware\Directory</full_name>
-      <docblock line="8">
-        <description></description>
-        <long-description></long-description>
-      </docblock>
-      <property static="false" visibility="private" line="9" namespace="Dynamo\Middleware" package="Default">
-        <name>$path</name>
-        <default></default>
-        <docblock line="9">
-          <description></description>
-          <long-description></long-description>
-        </docblock>
-      </property>
-      <property static="false" visibility="private" line="9" namespace="Dynamo\Middleware" package="Default">
-        <name>$filter</name>
-        <default></default>
-        <docblock line="9">
-          <description></description>
-          <long-description></long-description>
-        </docblock>
-      </property>
-      <property static="false" visibility="private" line="9" namespace="Dynamo\Middleware" package="Default">
-        <name>$index</name>
-        <default></default>
-        <docblock line="9">
-          <description></description>
-          <long-description></long-description>
-        </docblock>
-      </property>
-      <property static="false" visibility="private" line="9" namespace="Dynamo\Middleware" package="Default">
-        <name>$hasIndex</name>
-        <default></default>
-        <docblock line="9">
-          <description></description>
-          <long-description></long-description>
-        </docblock>
-      </property>
-      <property static="false" visibility="private" line="9" namespace="Dynamo\Middleware" package="Default">
-        <name>$finfo</name>
-        <default></default>
-        <docblock line="9">
-          <description></description>
-          <long-description></long-description>
-        </docblock>
-      </property>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Dynamo\Middleware" line="10" package="Default">
-        <name>__construct</name>
-        <full_name>\Dynamo\Middleware\Directory::__construct()</full_name>
-        <docblock line="10">
-          <description></description>
-          <long-description></long-description>
-        </docblock>
-        <argument line="0" by_reference="false">
-          <name>$path</name>
-          <default></default>
-          <type/>
-        </argument>
-        <argument line="0" by_reference="false">
-          <name>$filter</name>
-          <default>null</default>
-          <type>callable</type>
-        </argument>
-        <argument line="0" by_reference="false">
-          <name>$index</name>
-          <default>false</default>
-          <type/>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Dynamo\Middleware" line="23" package="Default">
-        <name>__invoke</name>
-        <full_name>\Dynamo\Middleware\Directory::__invoke()</full_name>
-        <docblock line="23">
-          <description></description>
-          <long-description></long-description>
-        </docblock>
-        <argument line="0" by_reference="false">
-          <name>$request</name>
-          <default></default>
-          <type>\Dynamo\HttpRequest</type>
-        </argument>
-        <argument line="0" by_reference="false">
-          <name>$response</name>
-          <default></default>
-          <type>\Dynamo\HttpResponse</type>
-        </argument>
-      </method>
-    </class>
-    <parse_markers>
-      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
-      <error line="8" code="PPC:ERR-50005">No summary for class \Dynamo\Middleware\Directory</error>
-      <error line="9" code="PPC:ERR-50007">No summary for property $path</error>
-      <error line="9" code="PPC:ERR-50007">No summary for property $filter</error>
-      <error line="9" code="PPC:ERR-50007">No summary for property $index</error>
-      <error line="9" code="PPC:ERR-50007">No summary for property $hasIndex</error>
-      <error line="9" code="PPC:ERR-50007">No summary for property $finfo</error>
-      <error line="10" code="PPC:ERR-50015">Argument $path is missing from the Docblock of __construct()</error>
-      <error line="10" code="PPC:ERR-50015">Argument $index is missing from the Docblock of __construct()</error>
-      <error line="10" code="PPC:ERR-50008">No summary for method __construct()</error>
-      <error line="23" code="PPC:ERR-50008">No summary for method __invoke()</error>
-    </parse_markers>
-    <source>eJx1U1Fv2jAQfk5+xVViTSLBUF9hUHWQdpFWqBh76IQUpcmlsWZsz3YoaOK/z4kTSLv2KZe783fffZ/95VoUwmXJFpVIUoT5wcR8c0+yjOJLInHsuqU65b9pLVb4p0Slx//nleBMoS1scsJybk6nNFEK5kRiqrk8wF/XEZLsEo3QE4ku+tDLCdUoTUBYhnvzLRIVNWED44jyiZIU8pKlmnAGcZyaYVqWqfYbnDShNHmi2ALCBFhJaYtrfvOEKgwqCk5PF0QNptVJU6gRxm/Snyegyiczw+9k+zC4CmAymYA39OAaPA9GMI9W4Wy9XD3GP8KHm9WNCc3mjkNy/4KoOCOvIALLwNGF5C/A8AU2EdsllGQ38rncItPhPkVRrekroxXTue99UpBxVMC4BtwTpS+8vqUdBBXx45n8afsL3Ap98Bs5AsO2VWZ0FtKqZyiBRF1KBqYF43qEampjOI678MaRSltDvI79oFNtrTMNZvPWEt9a0G1sPbEVUzi677lM2I7/Rr9z8aAnbdCH7rWr0jZqDG6t7Tp6MrSBGEyfUTe4PyX1gz5cWZI5O5+1oo2toabSyNLYeJo7mCrUM8505SBLeUbYs2/gYDiEwjDdhGy3aemORrPlYh0u1nG4mC3n0eIuvvsVPVS3pprS3hrrzeUlvJG3me0YaIVyh6ALBCspz+sfJTAlOcEMKoy6+dVSrewfbbA+CPQ9jXs9LPSWesF7vV95dugqUvccAc0zawh+jN29TrXG2D7k2+h7GC1ul/F9dB/G68eHMPh4es4FsvakJ72WhH0TR/fo/gPhDI02</source>
-  </file>
-  <file path="Middleware/CORS.php" generated-path="Middleware.CORS.html" hash="d966f9c523d78a68220e42e329acaa18" package="Default">
-    <docblock line="0">
-      <description></description>
-      <long-description></long-description>
-    </docblock>
-    <class final="false" abstract="false" namespace="Dynamo\Middleware" line="7" package="Default">
-      <extends/>
-      <name>CORS</name>
-      <full_name>\Dynamo\Middleware\CORS</full_name>
-      <docblock line="7">
-        <description></description>
-        <long-description></long-description>
-      </docblock>
-      <property static="false" visibility="private" line="8" namespace="Dynamo\Middleware" package="Default">
-        <name>$domains</name>
-        <default></default>
-        <docblock line="8">
-          <description></description>
-          <long-description></long-description>
-        </docblock>
-      </property>
-      <property static="false" visibility="private" line="8" namespace="Dynamo\Middleware" package="Default">
-        <name>$methods</name>
-        <default></default>
-        <docblock line="8">
-          <description></description>
-          <long-description></long-description>
-        </docblock>
-      </property>
-      <property static="false" visibility="private" line="8" namespace="Dynamo\Middleware" package="Default">
-        <name>$allowHeaders</name>
-        <default></default>
-        <docblock line="8">
-          <description></description>
-          <long-description></long-description>
-        </docblock>
-      </property>
-      <property static="false" visibility="private" line="8" namespace="Dynamo\Middleware" package="Default">
-        <name>$exposeHeaders</name>
-        <default></default>
-        <docblock line="8">
-          <description></description>
-          <long-description></long-description>
-        </docblock>
-      </property>
-      <property static="false" visibility="private" line="8" namespace="Dynamo\Middleware" package="Default">
-        <name>$ttl</name>
-        <default></default>
-        <docblock line="8">
-          <description></description>
-          <long-description></long-description>
-        </docblock>
-      </property>
-      <property static="false" visibility="private" line="8" namespace="Dynamo\Middleware" package="Default">
-        <name>$credentials</name>
-        <default></default>
-        <docblock line="8">
-          <description></description>
-          <long-description></long-description>
-        </docblock>
-      </property>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Dynamo\Middleware" line="9" package="Default">
-        <name>__construct</name>
-        <full_name>\Dynamo\Middleware\CORS::__construct()</full_name>
-        <docblock line="9">
-          <description></description>
-          <long-description></long-description>
-        </docblock>
-        <argument line="0" by_reference="false">
-          <name>$domains</name>
-          <default>array()</default>
-          <type/>
-        </argument>
-        <argument line="0" by_reference="false">
-          <name>$credentials</name>
-          <default>false</default>
-          <type/>
-        </argument>
-        <argument line="0" by_reference="false">
-          <name>$methods</name>
-          <default>array()</default>
-          <type/>
-        </argument>
-        <argument line="0" by_reference="false">
-          <name>$allowHeaders</name>
-          <default>array()</default>
-          <type/>
-        </argument>
-        <argument line="0" by_reference="false">
-          <name>$exposeHeaders</name>
-          <default>array()</default>
-          <type/>
-        </argument>
-        <argument line="0" by_reference="false">
-          <name>$ttl</name>
-          <default>3500</default>
-          <type/>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Dynamo\Middleware" line="20" package="Default">
-        <name>__invoke</name>
-        <full_name>\Dynamo\Middleware\CORS::__invoke()</full_name>
-        <docblock line="20">
-          <description></description>
-          <long-description></long-description>
-        </docblock>
-        <argument line="0" by_reference="false">
-          <name>$request</name>
-          <default></default>
-          <type>\Dynamo\HttpRequest</type>
-        </argument>
-        <argument line="0" by_reference="false">
-          <name>$response</name>
-          <default></default>
-          <type>\Dynamo\HttpResponse</type>
-        </argument>
-      </method>
-    </class>
-    <parse_markers>
-      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
-      <error line="7" code="PPC:ERR-50005">No summary for class \Dynamo\Middleware\CORS</error>
-      <error line="8" code="PPC:ERR-50007">No summary for property $domains</error>
-      <error line="8" code="PPC:ERR-50007">No summary for property $methods</error>
-      <error line="8" code="PPC:ERR-50007">No summary for property $allowHeaders</error>
-      <error line="8" code="PPC:ERR-50007">No summary for property $exposeHeaders</error>
-      <error line="8" code="PPC:ERR-50007">No summary for property $ttl</error>
-      <error line="8" code="PPC:ERR-50007">No summary for property $credentials</error>
-      <error line="9" code="PPC:ERR-50015">Argument $domains is missing from the Docblock of __construct()</error>
-      <error line="9" code="PPC:ERR-50015">Argument $credentials is missing from the Docblock of __construct()</error>
-      <error line="9" code="PPC:ERR-50015">Argument $methods is missing from the Docblock of __construct()</error>
-      <error line="9" code="PPC:ERR-50015">Argument $allowHeaders is missing from the Docblock of __construct()</error>
-      <error line="9" code="PPC:ERR-50015">Argument $exposeHeaders is missing from the Docblock of __construct()</error>
-      <error line="9" code="PPC:ERR-50015">Argument $ttl is missing from the Docblock of __construct()</error>
-      <error line="9" code="PPC:ERR-50008">No summary for method __construct()</error>
-      <error line="20" code="PPC:ERR-50008">No summary for method __invoke()</error>
-    </parse_markers>
-    <source>eJydVNtqGzEQfd79ChkMu4YsBEpf6tTBuIH0wQTSp5IEo+yObVGtpEpaXyj77x3tXW7i4jzYHs3lnKOZkW9u1VaFguZgFE2BfDuiLZ+XLMs47KmGaRgWpvPfW6se4XcBxl6Fgec0Sgrj0lNOjSGLh8cf5E8YKM121AIZZzKnTJgrMs7BbmXmLMq53N8DzUC7IxyUNNCfreX4nWrIQFhGuZkiXvHKWUrWhUgtk4KsVinyWl2kNm45yFfy9OJXomuNP9DTt0lDDa3PE9I6UQ2anz5fX0/cxQK2jiFX9tjRTmp/YLda7omAPXn+LnaUs2yuN0WOSu4OKSgnO45+yoLkhbHEFErxI6GWcKB4lgJIDTiKJnjhoMTP2G6ZSWb9/ZhZUa3pgJzcdj0mX8hTa79M+3K/HyeNbZP69vQcja/iaOOOo7GHHCft7DGGgQrIy3RoQ8cQ8nQaPaYXqUD9XIfqeYaw9TxjJuzEzRYj5VvrxcRO/oJ4sPlkrJsnQIar79y1Ve/BWGq2YcJ1uslPZhuwtZI4eqii9YhxlUbNLtVF7SphgIn2tnXIbeJwGdrUoKNPZqanmacpGJMspLBa8mTuepw03AjV0E0rBCdj9O+utASXMCz6cqR5CxWnFeGzhQinFFVvM2pklJ2YpifeYk4+ImdZ16IUlisuM4jRjLpWdtBnBXgb/BEVTe17Knz8s1L8xb9My11V+z8xJwxn1eDruVDDkh6S+QZ6Ogcx4Cjr/70yLP8CYSYjKA==</source>
-  </file>
-  <file path="Middleware/RequestDuration.php" generated-path="Middleware.RequestDuration.html" hash="9d067ad03627841608a4e97a9d452514" package="Default">
-    <docblock line="0">
-      <description></description>
-      <long-description></long-description>
-    </docblock>
-    <class final="false" abstract="false" namespace="Dynamo\Middleware" line="6" package="Default">
-      <extends/>
-      <name>RequestDuration</name>
-      <full_name>\Dynamo\Middleware\RequestDuration</full_name>
-      <docblock line="6">
-        <description></description>
-        <long-description></long-description>
-      </docblock>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Dynamo\Middleware" line="7" package="Default">
-        <name>__invoke</name>
-        <full_name>\Dynamo\Middleware\RequestDuration::__invoke()</full_name>
-        <docblock line="7">
-          <description></description>
-          <long-description></long-description>
-        </docblock>
-        <argument line="0" by_reference="false">
-          <name>$response</name>
-          <default></default>
-          <type>\Dynamo\HttpResponse</type>
-        </argument>
-      </method>
-    </class>
-    <parse_markers>
-      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
-      <error line="6" code="PPC:ERR-50005">No summary for class \Dynamo\Middleware\RequestDuration</error>
-      <error line="7" code="PPC:ERR-50008">No summary for method __invoke()</error>
-    </parse_markers>
-    <source>eJxljj8LwjAQxWfzKW4otIqFOtc/i4OLSycHQWJyYrBNYnJRivS722qrgtvj3bvfe/OVPVumeYXecoGwrltt9lslZYl37jBnLPiPvyGyRRs12ncXUXLvocBrQE/r4Dgpo+HBRjYcSyXgFLR4WYeD0jdzweQXAJHr1bj7GUWeuCNYQKWEM6QqTMgFHOftrVZYyk5Ecqj5y0EKb8QrN7DTpUfaIJfokniX9mPTYW08hS9yArMsy7rChjXsCaYaYBw=</source>
-  </file>
-  <file path="HttpRequest.php" generated-path="HttpRequest.html" hash="a91f311c0389cb29ee2b42aa3c0b119e" package="Default">
-    <docblock line="0">
-      <description></description>
-      <long-description></long-description>
-    </docblock>
-    <class final="false" abstract="false" namespace="Dynamo" line="8" package="Default">
-      <extends>\Dynamo\Proxy</extends>
-      <name>HttpRequest</name>
-      <full_name>\Dynamo\HttpRequest</full_name>
-      <docblock line="8">
-        <description></description>
-        <long-description></long-description>
-        <tag name="codeCoverageIgnore" line="8" description=""/>
-      </docblock>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Dynamo" line="9" package="Default">
-        <name>__construct</name>
-        <full_name>\Dynamo\HttpRequest::__construct()</full_name>
-        <docblock line="9">
-          <description></description>
-          <long-description></long-description>
-        </docblock>
-      </method>
-    </class>
-    <parse_markers>
-      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
-      <error line="8" code="PPC:ERR-50005">No summary for class \Dynamo\HttpRequest</error>
-      <error line="9" code="PPC:ERR-50008">No summary for method __construct()</error>
-    </parse_markers>
-    <source>eJxNjk1rAkEQRM+ZX1G3jXvxroEEEsHcQshRkHa2szOgPZPpHj8Q/3t2jUJuTTWv6j0955Cd0I41k2e8nYY7zZ2btq0DWnyFqPBbUkVUaQyHVCzAWC1Kjw17qsqI1igIFqLgUChnLqCSqnQIZnm1kP3qk3/qgI2107EfLz51/Jr2XKjn915S4fH1t7YcsBsBPhpLp/go6XjC2T3kutlGj+8q3mISrNc+iVqp3h4nOCNTYbHZ7H/eXEWuJneVZjLHxV3cL9EqWsw=</source>
-  </file>
-  <file path="HttpResponse.php" generated-path="HttpResponse.html" hash="e5f7a6ae72cb1ff335b3aa3034b54b4f" package="Default">
-    <docblock line="0">
-      <description></description>
-      <long-description></long-description>
-    </docblock>
-    <class final="false" abstract="false" namespace="Dynamo" line="8" package="Default">
-      <extends>\Dynamo\Proxy</extends>
-      <name>HttpResponse</name>
-      <full_name>\Dynamo\HttpResponse</full_name>
-      <docblock line="8">
-        <description></description>
-        <long-description></long-description>
-        <tag name="codeCoverageIgnore" line="8" description=""/>
-      </docblock>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Dynamo" line="9" package="Default">
-        <name>__construct</name>
-        <full_name>\Dynamo\HttpResponse::__construct()</full_name>
-        <docblock line="9">
-          <description></description>
-          <long-description></long-description>
-        </docblock>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Dynamo" line="10" package="Default">
-        <name>setBody</name>
-        <full_name>\Dynamo\HttpResponse::setBody()</full_name>
-        <docblock line="10">
-          <description></description>
-          <long-description></long-description>
-        </docblock>
-        <argument line="0" by_reference="false">
-          <name>$body</name>
-          <default></default>
-          <type/>
-        </argument>
-      </method>
-    </class>
-    <parse_markers>
-      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
-      <error line="8" code="PPC:ERR-50005">No summary for class \Dynamo\HttpResponse</error>
-      <error line="9" code="PPC:ERR-50008">No summary for method __construct()</error>
-      <error line="10" code="PPC:ERR-50015">Argument $body is missing from the Docblock of setBody()</error>
-      <error line="10" code="PPC:ERR-50008">No summary for method setBody()</error>
-    </parse_markers>
-    <source>eJxtj0lrxDAMhc/xr9AhkAXK3Cfd6ALtoVBKj4HgOJrEkNrGy3TCkP9eZel0vRhZT++T3vmV6QxT/A2d4QLhbqBaF4xt8pwB5PDaSQei584BFUF5dJ7XPUKNggeH0Hlvynu1L18IoRV1BFeJJx2mWWwmzGbiwbXQDd7qPVre4mOrtMVJWugPxDkh8OBRNQ6erT4McGSRCXUvBeyCEl5qBVUlaNDbIHyawREMt6j8dvu9n8ynzbedjkuyAsa/OIf+RjdDGtf0ZtPCSO5S6SpCSdWu/UWI4houQOH7Ev0JnaM45ezPimXg7JIbQwlW49qlkpxxPX1HwJ6CLlssOh2swN97FsP/q77IlCf6zP8zCKkjG9kHRiadzQ==</source>
-  </file>
   <file path="Proxy.php" generated-path="Proxy.html" hash="1c45b3c617b50f22a6d08be9898978f4" package="Default">
     <docblock line="0">
       <description></description>
@@ -498,101 +141,6 @@
     </parse_markers>
     <source>eJyNUslOwzAQPSdf4UMOidT+QANFUC6VAFVUnEoVucZpLBIn8lKoaP+dGWdpuiEuUTzzlpln39xVWeVLWnBdUcbJ4xb+y9j3rebk/ZWnOWdGlHKSU60HvtcrPXOTlR8AZdgjM1V+b8mP71VKbKjhJBBSm7h3LhxBk1uyWALNq+wqF4ykVjo9kiSsBIqyzISBE32BuSLU9OozUCX/Iidj9cExYqlaIxSFkzU3CZ5D16JK0W2iM5GCBZZrgsmEHo5xXqDVasMxOE2hQiXj9yjQ4pFwWKVFg08diA5PIxqNpvNk9vbwNJ04u7RUnLIs7FSobsOpl/VE2jZhKn2/glAohBKR3Y70GnNDjWBh1LA8iM8IaTmaeHv8NJs1RouOC9NiXGG0xBWK5iYdaX/pYgAfBrK+DaK4sUqSXmrDsWvG5CJZt+QBCTY0t3+L4EAOdUVNaH1hmKZ6phZdUbHySKU5/pvOaJ53O8G7sAWXRp/v1QWP0CVKb8rP5jkdzI400HHv/wK0XTGe</source>
   </file>
-  <file path="WebApp.php" generated-path="WebApp.html" hash="a4b5e445a0e9ce4f93878cc41134ff54" package="Default">
-    <docblock line="0">
-      <description></description>
-      <long-description></long-description>
-    </docblock>
-    <class final="false" abstract="true" namespace="Dynamo" line="8" package="Default">
-      <extends>\Dynamo\App</extends>
-      <name>WebApp</name>
-      <full_name>\Dynamo\WebApp</full_name>
-      <docblock line="8">
-        <description></description>
-        <long-description></long-description>
-      </docblock>
-      <property static="false" visibility="public" line="9" namespace="Dynamo" package="Default">
-        <name>$router</name>
-        <default></default>
-        <docblock line="9">
-          <description></description>
-          <long-description></long-description>
-        </docblock>
-      </property>
-      <property static="false" visibility="public" line="9" namespace="Dynamo" package="Default">
-        <name>$request</name>
-        <default></default>
-        <docblock line="9">
-          <description></description>
-          <long-description></long-description>
-        </docblock>
-      </property>
-      <property static="false" visibility="public" line="9" namespace="Dynamo" package="Default">
-        <name>$response</name>
-        <default></default>
-        <docblock line="9">
-          <description></description>
-          <long-description></long-description>
-        </docblock>
-      </property>
-      <method final="false" abstract="false" static="true" visibility="public" namespace="Dynamo" line="15" package="Default">
-        <name>create</name>
-        <full_name>\Dynamo\WebApp::create()</full_name>
-        <docblock line="15">
-          <description></description>
-          <long-description></long-description>
-          <tag name="codeCoverageIgnore" line="15" description=""/>
-        </docblock>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Dynamo" line="24" package="Default">
-        <name>__construct</name>
-        <full_name>\Dynamo\WebApp::__construct()</full_name>
-        <docblock line="24">
-          <description></description>
-          <long-description></long-description>
-        </docblock>
-        <argument line="0" by_reference="false">
-          <name>$injector</name>
-          <default></default>
-          <type>\DI\Injector</type>
-        </argument>
-        <argument line="0" by_reference="false">
-          <name>$router</name>
-          <default>null</default>
-          <type>\Convey\Router</type>
-        </argument>
-        <argument line="0" by_reference="false">
-          <name>$request</name>
-          <default>null</default>
-          <type>\Dynamo\HttpRequest</type>
-        </argument>
-        <argument line="0" by_reference="false">
-          <name>$response</name>
-          <default>null</default>
-          <type>\Dynamo\HttpResponse</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Dynamo" line="41" package="Default">
-        <name>run</name>
-        <full_name>\Dynamo\WebApp::run()</full_name>
-        <docblock line="41">
-          <description></description>
-          <long-description></long-description>
-        </docblock>
-      </method>
-    </class>
-    <parse_markers>
-      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
-      <error line="8" code="PPC:ERR-50005">No summary for class \Dynamo\WebApp</error>
-      <error line="9" code="PPC:ERR-50007">No summary for property $router</error>
-      <error line="9" code="PPC:ERR-50007">No summary for property $request</error>
-      <error line="9" code="PPC:ERR-50007">No summary for property $response</error>
-      <error line="15" code="PPC:ERR-50008">No summary for method create()</error>
-      <error line="24" code="PPC:ERR-50008">No summary for method __construct()</error>
-      <error line="41" code="PPC:ERR-50008">No summary for method run()</error>
-    </parse_markers>
-    <source>eJx9VE1vEzEQPe/+iqkUab1V2lQcWxpApRI9lEMRIKRIleNMEsOubWxvUoT63xl/bLptE07rnY83M2+e/fadWZtS8Rad4QLh4x8664uy7Bz93Mxu1E8UXttxWVxptcE/szvdeQz/a+/N7Bad4yukBD533nLhQTTcOfiO8w/GAD54VAsH4fy3LEw3b6SAkU0gdMDfHTofT85o5QJUMTk+LguAY/isPWy19WvwFCXVCvxaOpij4KFB6SsHHJznnlBb9Gu9oAhOTVjklAJcgVTkVwIj4iSCw3uhF3ilN2ip+ZuV0hajL/eXAZedEl5qldFYHUYoRjJzApegcAs9Ray+GHpPpsbqjVwgq3pTRWP25xScx89In4jRu2RhvT+R8iwgmfqIyGT2p90kj0XfWRXNaRy2qz3+7wJC9mO542JHwv29ILe3nfCsnxkGmKk4DDrqmmY8HAqG8w6cecZn05I70x10lueb3eGywdjOdRCWowOrQkAVZ5ZLdkQ7DWZqtjXcIov5J9MV+m/Jw+oxVG9Oz07PaB/V9LKqU6FiMgHBVeWj1pLQ8EGgidMvOgSvSXEkvqBD2RrtnJw30dzyX5gyllw2GWyPyL54bn1w+7XV2zxTp7xs8bovxaofuoO2ox7WfINgUDQQSaCmgTjnc8I8ShMfqHOtFuQMWyxGoa2T6W4reT8X5QGx5hVVT9o4qOt+X9UL9ewPjmVD6LChFJ4sg3u1AzigRdup/jY6bJYhI2AMwCyupAuXYZfD9ilxDK+lXAO9LSwCZ2WMWqpA0ve60VvC7LOjrDLkbXx9WJ3WMjKR6tdhX22T7mfRUH9sxO3KESdiXoeEULOnJn/ZqCW/ybApYA+9pHXeukBvQMzRS/UE+pSTTizU7MNSS491VEW4Nsqfn0eSoyW/JS/2FEj2VuJmKIX0ejyW/wDaCRB/</source>
-  </file>
   <file path="App.php" generated-path="App.html" hash="2c7b61c0bc6e491b554140369e61ab2f" package="Default">
     <docblock line="0">
       <description></description>
@@ -702,6 +250,495 @@ static create method.</description>
       <error line="43" code="PPC:ERR-50008">No summary for method run()</error>
     </parse_markers>
     <source>eJyFVclu2zAQPUtfMQEMWFlsJz0VTeO26Ibcut2aIqCpkcSCIlWSsmMU/vcOqcWUW6AH29zmzXtvhvTLV03VpIrVaBvGEd7taaxv07S1NLl/uFc/kTttaIVtrDOMO+CSWQtvmgZ+p0ljxJY5hNmvFlu8TZPVxUWaAFzA6y0z8BBhwLcKQQyTgj6uEhZY00jBmRNa9YEWESrnmherldQmf/b8+npZCle1m6XQq1wsifOK6y0aVmJAjbO81TnSV79r0LbS2YC88nS1o2OYw0yM0k44C+UCaM2eRN3WoNp6gwZ0AVLrxhJro9uyol+EEhXlIRTSUTg0YbEQxjpoyKV/pCXUe+djSK+FO7i5Jm+PDD4GQCn3sNct5FrNHewYMXIafE28ZVfAVE40rUOWn+xiB2MdJeDADfri1OgqnS97jQ0zrP5vZfCvwngd7YaWoGgV98vw+MhJhTMtd9kINjp77hskmXnKi/UIfzex/pCOqD3nEbwjn/UoUbzCHQzZsvPbeHexJqu3IsdsPizNryJG3uvEoGuNCjBdziw+EFMae/5ISqtClFkAOnXDYCmoJibjVEC2kXQrapHnEnfMYCdDFBnWjdtnvSvh1px3e0m81st8+NrIz37e6Tyk01OLNaowyOJMUw1Heq3KJiWJtSSzqJXv4PsPn446ARmvJmSB2b9lJbONblX+QfnqTus9jE4ZUkx3N31IH92J9CYNe77JmeJIl+/h40Cwz5kwY9j+sVW2EgXhHwVQxbv4Du8wOMcpjc8Xrlyyq4TE7KyvxzF6LIdErycETfY79lxq5csU7YQNMo36KWShxoOX4HH88PJyIB5Z4QEC0veZCJ4H+WfRicV6y6TIs4HWoNv624knssUV3HT8koTK64QKj3JvwiTzYq3wyWWDRZ0mr/XycqxCb9jdWNXJ6zXKKSXJmM+7RGPTxG8j9Uw58vfnl31/f8FCYujPt/5vhaLOY77+rd31J4mKqPH9E8fGn8/+RQmWMAdxnAYqmNOLudGG3CjP4BOqnAbR0/2CYpZEUE7a5ZAe0j8Cczl2</source>
+  </file>
+  <file path="WebApp.php" generated-path="WebApp.html" hash="27345c03f85a25ba285d9a591fd4c877" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+    </docblock>
+    <class final="false" abstract="true" namespace="Dynamo" line="7" package="Default">
+      <extends>\Dynamo\App</extends>
+      <name>WebApp</name>
+      <full_name>\Dynamo\WebApp</full_name>
+      <docblock line="7">
+        <description></description>
+        <long-description></long-description>
+      </docblock>
+      <property static="false" visibility="public" line="8" namespace="Dynamo" package="Default">
+        <name>$router</name>
+        <default></default>
+        <docblock line="8">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <property static="false" visibility="public" line="8" namespace="Dynamo" package="Default">
+        <name>$request</name>
+        <default></default>
+        <docblock line="8">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <property static="false" visibility="public" line="8" namespace="Dynamo" package="Default">
+        <name>$response</name>
+        <default></default>
+        <docblock line="8">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Dynamo" line="14" package="Default">
+        <name>create</name>
+        <full_name>\Dynamo\WebApp::create()</full_name>
+        <docblock line="14">
+          <description></description>
+          <long-description></long-description>
+          <tag name="codeCoverageIgnore" line="14" description=""/>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Dynamo" line="23" package="Default">
+        <name>__construct</name>
+        <full_name>\Dynamo\WebApp::__construct()</full_name>
+        <docblock line="23">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$injector</name>
+          <default></default>
+          <type>\DI\Injector</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$router</name>
+          <default>null</default>
+          <type>\Convey\Router</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$request</name>
+          <default>null</default>
+          <type>\Dynamo\HttpRequest</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$response</name>
+          <default>null</default>
+          <type>\Dynamo\HttpResponse</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Dynamo" line="33" package="Default">
+        <name>run</name>
+        <full_name>\Dynamo\WebApp::run()</full_name>
+        <docblock line="33">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+      <error line="7" code="PPC:ERR-50005">No summary for class \Dynamo\WebApp</error>
+      <error line="8" code="PPC:ERR-50007">No summary for property $router</error>
+      <error line="8" code="PPC:ERR-50007">No summary for property $request</error>
+      <error line="8" code="PPC:ERR-50007">No summary for property $response</error>
+      <error line="14" code="PPC:ERR-50008">No summary for method create()</error>
+      <error line="23" code="PPC:ERR-50008">No summary for method __construct()</error>
+      <error line="33" code="PPC:ERR-50008">No summary for method run()</error>
+    </parse_markers>
+    <source>eJx9U02P0zAQPSe/Yg6VmlSt9r4LBbQc6AEOKyEuK61cd5oYpbaxJy0V6n9n/JEQSpdL63hm3pv3ZvzmnW1tqcUBvRUS4eOZz+ahLHvPH5vnjf6OkoxblsWj0Uc8Pz+ZntBxhth6ckISyE54D99w+8FawJ+EeuchnH+Vhe23nZIwc7FqyQf80aOnePLWaI8MVdwtFmUBsIAvhuBkHLVAnKV0A9QqD1uUInSkaO5BgCdBjHpAas2OMwQ34VBwCQgNSnNcs5iTCjgtglNNS7BDy62hlueVirIw1DKHj9x3sQ14L80OH80RnWhw02jjMMaykky977UkZXTmreogtpipbBe8BY0nGNyr6odpdLW2zhzVDqv5cDVnQ4ZzSs5GMdInIvuUvu7vB76ckyzMdCkxXQ0Z0fccT6NLEYfUOx2vk6Rq5F/+d1yh+lKOfoxGvLxIDpPrJVWDbphgJnKYdNR33XIqDiaap8Gs8S+1HM6Wh/1YrUfUjB+W6qbhmWL+R9ursxn45lfqbydH2pA6bSilp5vJbowAIWy2LzwBR9VrzrpeD/vlsduH+oA4gXbYKB9GO9ZUt3xdwr+DqYHfVRWBE0cxOzADD5JMZ06MOVSv1g3S5/jkqjoKK2Y2Oj6Jf3Vd2q9izw9HyDZBD37k/2p2YKNsDcLngWXuomMd1Uy4xnOC3NbjRCNmkcFu+G+FEwcf/A/FdU7f6wBwXZROVcAf83LXF/651HF7GBE1v7hof7zJb+ZqnsF+cgqP05VJs7yUvwG9/r5F</source>
+  </file>
+  <file path="HttpRequest.php" generated-path="HttpRequest.html" hash="83c4f44183e1fb4610c3443fc7d48669" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+    </docblock>
+    <class final="false" abstract="false" namespace="Dynamo" line="8" package="Default">
+      <extends>\Sabre\HTTP\RequestDecorator</extends>
+      <name>HttpRequest</name>
+      <full_name>\Dynamo\HttpRequest</full_name>
+      <docblock line="8">
+        <description></description>
+        <long-description></long-description>
+        <tag name="codeCoverageIgnore" line="8" description=""/>
+      </docblock>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Dynamo" line="9" package="Default">
+        <name>create</name>
+        <full_name>\Dynamo\HttpRequest::create()</full_name>
+        <docblock line="9">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+      <error line="8" code="PPC:ERR-50005">No summary for class \Dynamo\HttpRequest</error>
+      <error line="9" code="PPC:ERR-50008">No summary for method create()</error>
+    </parse_markers>
+    <source>eJxtjLFOw0AQRGvuK6bDdpM+QQKJKDKdBS7dnM9LYim5PXbXhCjKv+MjLql2tPPePD2nQ3LRn0iTD4TtZc68cW5VVQ6o0B5GRTh6VeTA3yQ0oL/gw/dCjwo+RxipacZX2cNL4IFeM+r39LaPLJSr+0ptlt7pa5oV0I9RHBTd31hXt23TLd2WAos3FlzdQ5r64xig5m0+n1MMNnJEEPJGRYkrhGySiEjnhSr+2Vyv78ZO+NTUzfItynKDm7u5Xx/7W9g=</source>
+  </file>
+  <file path="Middleware/CORS.php" generated-path="Middleware.CORS.html" hash="d966f9c523d78a68220e42e329acaa18" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+    </docblock>
+    <class final="false" abstract="false" namespace="Dynamo\Middleware" line="7" package="Default">
+      <extends/>
+      <name>CORS</name>
+      <full_name>\Dynamo\Middleware\CORS</full_name>
+      <docblock line="7">
+        <description></description>
+        <long-description></long-description>
+      </docblock>
+      <property static="false" visibility="private" line="8" namespace="Dynamo\Middleware" package="Default">
+        <name>$domains</name>
+        <default></default>
+        <docblock line="8">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" line="8" namespace="Dynamo\Middleware" package="Default">
+        <name>$methods</name>
+        <default></default>
+        <docblock line="8">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" line="8" namespace="Dynamo\Middleware" package="Default">
+        <name>$allowHeaders</name>
+        <default></default>
+        <docblock line="8">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" line="8" namespace="Dynamo\Middleware" package="Default">
+        <name>$exposeHeaders</name>
+        <default></default>
+        <docblock line="8">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" line="8" namespace="Dynamo\Middleware" package="Default">
+        <name>$ttl</name>
+        <default></default>
+        <docblock line="8">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" line="8" namespace="Dynamo\Middleware" package="Default">
+        <name>$credentials</name>
+        <default></default>
+        <docblock line="8">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Dynamo\Middleware" line="9" package="Default">
+        <name>__construct</name>
+        <full_name>\Dynamo\Middleware\CORS::__construct()</full_name>
+        <docblock line="9">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$domains</name>
+          <default>array()</default>
+          <type/>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$credentials</name>
+          <default>false</default>
+          <type/>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$methods</name>
+          <default>array()</default>
+          <type/>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$allowHeaders</name>
+          <default>array()</default>
+          <type/>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$exposeHeaders</name>
+          <default>array()</default>
+          <type/>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$ttl</name>
+          <default>3500</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Dynamo\Middleware" line="20" package="Default">
+        <name>__invoke</name>
+        <full_name>\Dynamo\Middleware\CORS::__invoke()</full_name>
+        <docblock line="20">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$request</name>
+          <default></default>
+          <type>\Dynamo\HttpRequest</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$response</name>
+          <default></default>
+          <type>\Dynamo\HttpResponse</type>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+      <error line="7" code="PPC:ERR-50005">No summary for class \Dynamo\Middleware\CORS</error>
+      <error line="8" code="PPC:ERR-50007">No summary for property $domains</error>
+      <error line="8" code="PPC:ERR-50007">No summary for property $methods</error>
+      <error line="8" code="PPC:ERR-50007">No summary for property $allowHeaders</error>
+      <error line="8" code="PPC:ERR-50007">No summary for property $exposeHeaders</error>
+      <error line="8" code="PPC:ERR-50007">No summary for property $ttl</error>
+      <error line="8" code="PPC:ERR-50007">No summary for property $credentials</error>
+      <error line="9" code="PPC:ERR-50015">Argument $domains is missing from the Docblock of __construct()</error>
+      <error line="9" code="PPC:ERR-50015">Argument $credentials is missing from the Docblock of __construct()</error>
+      <error line="9" code="PPC:ERR-50015">Argument $methods is missing from the Docblock of __construct()</error>
+      <error line="9" code="PPC:ERR-50015">Argument $allowHeaders is missing from the Docblock of __construct()</error>
+      <error line="9" code="PPC:ERR-50015">Argument $exposeHeaders is missing from the Docblock of __construct()</error>
+      <error line="9" code="PPC:ERR-50015">Argument $ttl is missing from the Docblock of __construct()</error>
+      <error line="9" code="PPC:ERR-50008">No summary for method __construct()</error>
+      <error line="20" code="PPC:ERR-50008">No summary for method __invoke()</error>
+    </parse_markers>
+    <source>eJydVNtqGzEQfd79ChkMu4YsBEpf6tTBuIH0wQTSp5IEo+yObVGtpEpaXyj77x3tXW7i4jzYHs3lnKOZkW9u1VaFguZgFE2BfDuiLZ+XLMs47KmGaRgWpvPfW6se4XcBxl6Fgec0Sgrj0lNOjSGLh8cf5E8YKM121AIZZzKnTJgrMs7BbmXmLMq53N8DzUC7IxyUNNCfreX4nWrIQFhGuZkiXvHKWUrWhUgtk4KsVinyWl2kNm45yFfy9OJXomuNP9DTt0lDDa3PE9I6UQ2anz5fX0/cxQK2jiFX9tjRTmp/YLda7omAPXn+LnaUs2yuN0WOSu4OKSgnO45+yoLkhbHEFErxI6GWcKB4lgJIDTiKJnjhoMTP2G6ZSWb9/ZhZUa3pgJzcdj0mX8hTa79M+3K/HyeNbZP69vQcja/iaOOOo7GHHCft7DGGgQrIy3RoQ8cQ8nQaPaYXqUD9XIfqeYaw9TxjJuzEzRYj5VvrxcRO/oJ4sPlkrJsnQIar79y1Ve/BWGq2YcJ1uslPZhuwtZI4eqii9YhxlUbNLtVF7SphgIn2tnXIbeJwGdrUoKNPZqanmacpGJMspLBa8mTuepw03AjV0E0rBCdj9O+utASXMCz6cqR5CxWnFeGzhQinFFVvM2pklJ2YpifeYk4+ImdZ16IUlisuM4jRjLpWdtBnBXgb/BEVTe17Knz8s1L8xb9My11V+z8xJwxn1eDruVDDkh6S+QZ6Ogcx4Cjr/70yLP8CYSYjKA==</source>
+  </file>
+  <file path="Middleware/Directory.php" generated-path="Middleware.Directory.html" hash="397d03e971fccc69f712cd9b36c28d38" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+    </docblock>
+    <class final="false" abstract="false" namespace="Dynamo\Middleware" line="8" package="Default">
+      <extends/>
+      <name>Directory</name>
+      <full_name>\Dynamo\Middleware\Directory</full_name>
+      <docblock line="8">
+        <description></description>
+        <long-description></long-description>
+      </docblock>
+      <property static="false" visibility="private" line="9" namespace="Dynamo\Middleware" package="Default">
+        <name>$path</name>
+        <default></default>
+        <docblock line="9">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" line="9" namespace="Dynamo\Middleware" package="Default">
+        <name>$filter</name>
+        <default></default>
+        <docblock line="9">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" line="9" namespace="Dynamo\Middleware" package="Default">
+        <name>$index</name>
+        <default></default>
+        <docblock line="9">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" line="9" namespace="Dynamo\Middleware" package="Default">
+        <name>$hasIndex</name>
+        <default></default>
+        <docblock line="9">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" line="9" namespace="Dynamo\Middleware" package="Default">
+        <name>$finfo</name>
+        <default></default>
+        <docblock line="9">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Dynamo\Middleware" line="10" package="Default">
+        <name>__construct</name>
+        <full_name>\Dynamo\Middleware\Directory::__construct()</full_name>
+        <docblock line="10">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$path</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$filter</name>
+          <default>null</default>
+          <type>callable</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$index</name>
+          <default>false</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Dynamo\Middleware" line="23" package="Default">
+        <name>__invoke</name>
+        <full_name>\Dynamo\Middleware\Directory::__invoke()</full_name>
+        <docblock line="23">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$request</name>
+          <default></default>
+          <type>\Dynamo\HttpRequest</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$response</name>
+          <default></default>
+          <type>\Dynamo\HttpResponse</type>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+      <error line="8" code="PPC:ERR-50005">No summary for class \Dynamo\Middleware\Directory</error>
+      <error line="9" code="PPC:ERR-50007">No summary for property $path</error>
+      <error line="9" code="PPC:ERR-50007">No summary for property $filter</error>
+      <error line="9" code="PPC:ERR-50007">No summary for property $index</error>
+      <error line="9" code="PPC:ERR-50007">No summary for property $hasIndex</error>
+      <error line="9" code="PPC:ERR-50007">No summary for property $finfo</error>
+      <error line="10" code="PPC:ERR-50015">Argument $path is missing from the Docblock of __construct()</error>
+      <error line="10" code="PPC:ERR-50015">Argument $index is missing from the Docblock of __construct()</error>
+      <error line="10" code="PPC:ERR-50008">No summary for method __construct()</error>
+      <error line="23" code="PPC:ERR-50008">No summary for method __invoke()</error>
+    </parse_markers>
+    <source>eJx9U11v2zAMfLZ/BQtktQ0kC/qaLC26Nt0MrB/IsocOBQzXpmthiqRJdJpgyH+fbNmp07V7Mi1Sx+Md9elMlcoX6QqNSjOEy62N5cM1y3OOz6nGqe9XZn/+lUgt8HeFhqb/nhslhUGXeCiYKKS9nfHUGLhkGjOSegt/fE9ptk4JYaBSKocwKBgn1DZgIseN/ZapiduwhfFU9chZBkUlMmJSQJJkthnpKqOwxclSztNHjh0gzEBUnHe49rdIucGopuANqGRmdFrftIkGYfrq+OMMTPVoe4S90yGMTiKYzWYQjAM4gyCACVzGi/nF8nZxn3yf350vzm1oJ/c8VoRHzCQ5O4CIHAOPSi2fQeAzPMRinXKWn+unaoWC5psMVT1maKxWgoow+GAgl2hASALcMENHwdDRjqKa+O6F/H76I1wp2oatHJFl2ykzeRHSqWcpgUaqtABbgknTwrS5KeymfXjrSK2tJd7EYdTLdtbZAjt5Z0noLOgXdp64jE3s/LdcZmItf2HYWzwYaBcMob929bGLWoM7a/uO7g1tIUanT0g/NA+jIZw4doV4ueTUmjonbabVo/Vv33B0apAupKDaOpHJnImnsM9tMvnyM76Lmp2oobqdcMofH8Mr8doG3ngMBvUagUoEJ5gsmh+jMGMFwxxqjKb4gHkn6ns0l1uFYUC4oXFJKx5Eb9V+lvm2P3ZTswO0jwjcFPWuHIryn3b9/Wm0xe7lXsXf5vHN1W1yHV/Pk+X93Tx6n1AhFYruZqCDjpd7BDt/5/8F4naImg==</source>
+  </file>
+  <file path="Middleware/RequestDuration.php" generated-path="Middleware.RequestDuration.html" hash="9d067ad03627841608a4e97a9d452514" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+    </docblock>
+    <class final="false" abstract="false" namespace="Dynamo\Middleware" line="6" package="Default">
+      <extends/>
+      <name>RequestDuration</name>
+      <full_name>\Dynamo\Middleware\RequestDuration</full_name>
+      <docblock line="6">
+        <description></description>
+        <long-description></long-description>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Dynamo\Middleware" line="7" package="Default">
+        <name>__invoke</name>
+        <full_name>\Dynamo\Middleware\RequestDuration::__invoke()</full_name>
+        <docblock line="7">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$response</name>
+          <default></default>
+          <type>\Dynamo\HttpResponse</type>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+      <error line="6" code="PPC:ERR-50005">No summary for class \Dynamo\Middleware\RequestDuration</error>
+      <error line="7" code="PPC:ERR-50008">No summary for method __invoke()</error>
+    </parse_markers>
+    <source>eJxljj8LwjAQxWfzKW4otIqFOtc/i4OLSycHQWJyYrBNYnJRivS722qrgtvj3bvfe/OVPVumeYXecoGwrltt9lslZYl37jBnLPiPvyGyRRs12ncXUXLvocBrQE/r4Dgpo+HBRjYcSyXgFLR4WYeD0jdzweQXAJHr1bj7GUWeuCNYQKWEM6QqTMgFHOftrVZYyk5Ecqj5y0EKb8QrN7DTpUfaIJfokniX9mPTYW08hS9yArMsy7rChjXsCaYaYBw=</source>
+  </file>
+  <file path="HttpResponse.php" generated-path="HttpResponse.html" hash="ebe26d75bc5d2f8c9fc21df494580ff2" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+    </docblock>
+    <class final="false" abstract="false" namespace="Dynamo" line="10" package="Default">
+      <extends>\Sabre\HTTP\Response</extends>
+      <name>HttpResponse</name>
+      <full_name>\Dynamo\HttpResponse</full_name>
+      <docblock line="10">
+        <description></description>
+        <long-description></long-description>
+        <tag name="codeCoverageIgnore" line="10" description=""/>
+      </docblock>
+      <constant namespace="Dynamo" line="11" package="Default">
+        <name>NONE</name>
+        <full_name>\Dynamo\HttpResponse::NONE</full_name>
+        <value>0</value>
+        <docblock line="11">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </constant>
+      <constant namespace="Dynamo" line="12" package="Default">
+        <name>GZIP</name>
+        <full_name>\Dynamo\HttpResponse::GZIP</full_name>
+        <value>1</value>
+        <docblock line="12">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </constant>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Dynamo" line="14" package="Default">
+        <name>__construct</name>
+        <full_name>\Dynamo\HttpResponse::__construct()</full_name>
+        <docblock line="14">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Dynamo" line="19" package="Default">
+        <name>setContentEncoding</name>
+        <full_name>\Dynamo\HttpResponse::setContentEncoding()</full_name>
+        <docblock line="19">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$encoding</name>
+          <default>self::NONE</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Dynamo" line="30" package="Default">
+        <name>setContentType</name>
+        <full_name>\Dynamo\HttpResponse::setContentType()</full_name>
+        <docblock line="30">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$type</name>
+          <default>'text/plain'</default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <markers>
+      <todo line="24">figure out how to gzip the stream directly as an output buffer</todo>
+      <todo line="26">disable encoding</todo>
+    </markers>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+      <error line="10" code="PPC:ERR-50005">No summary for class \Dynamo\HttpResponse</error>
+      <error line="14" code="PPC:ERR-50008">No summary for method __construct()</error>
+      <error line="19" code="PPC:ERR-50015">Argument $encoding is missing from the Docblock of setContentEncoding()</error>
+      <error line="19" code="PPC:ERR-50008">No summary for method setContentEncoding()</error>
+      <error line="30" code="PPC:ERR-50015">Argument $type is missing from the Docblock of setContentType()</error>
+      <error line="30" code="PPC:ERR-50008">No summary for method setContentType()</error>
+    </parse_markers>
+    <source>eJx9Uk1v2zAMPdu/ggMK2A22Jd3RbfeBplhyaYo1pyFAIMu0LcCWBIlumq3576PsfLRAuxtBPvI9PvLqm61trEWL3gqJMN1ybC7jeDwaxQAjWNbKg2yE9xAC84gOC8i38CByh4kHs9FA6MkP8MV0AaXSytcDWOkKqEZokWpTeBBFwf1kQNGpoWVkyHU+wAX8YjVGe5yiNE6QcaC0JxRFaBkHbfBdmgJvAoOocF5p4zCUBqUzInuYAfhEqJl51StezZbL+9Wx+DeOJAcEd4u7W7iGyeUh8fP3/J4TF+xFZLu8URLKTktSRsN63WNcJyk9DzMiKxxqyrJXFZ4VeRKkZJZ5pAcOO59+mUxCZffGXAbdGM1y6VbzfmxGeob7iLV4bMosC0oHUlWmH5Rf665ln+UJeg7Pz3BqvILJ68RXuBgGRFQ7swGNG1jN9aNoVPHDVTyOBTxJtEFUmuwrcOynrcXPSb/ebpDxQuX1QWcwcE8zHh8eo+r4TqYjqJmXL179Ubb/D/YMRQuFciip2YLgV9EBaRmcd2WJLtABNny1dxhPzhwZC+VF3uBR+yD5/94veb30LCzJnifE/zO2jVA6GWa/uOiMXxJdmuwbP4XO5CP0vcONd/E/oZgZFQ==</source>
   </file>
   <package name="Default" full_name="Default"/>
   <namespace name="Dynamo" full_name="Dynamo">

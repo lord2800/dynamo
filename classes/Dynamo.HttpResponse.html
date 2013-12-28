@@ -31,7 +31,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">71</span></a></li>
+                <span class="label label-info">73</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -57,15 +57,26 @@
 <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
 </div>
 </div>
-<ul class="side-nav nav nav-list"><li class="nav-header">
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
 <i title="Methods" class="icon-custom icon-method"></i> Methods
                     <ul>
 <li class="method public "><a href="#method___construct" title="__construct() :: "><span class="description">__construct()
         </span><pre>__construct()</pre></a></li>
-<li class="method public "><a href="#method_setBody" title="setBody() :: "><span class="description">setBody()
-        </span><pre>setBody()</pre></a></li>
+<li class="method public "><a href="#method_setContentEncoding" title="setContentEncoding() :: "><span class="description">setContentEncoding()
+        </span><pre>setContentEncoding()</pre></a></li>
+<li class="method public "><a href="#method_setContentType" title="setContentType() :: "><span class="description">setContentType()
+        </span><pre>setContentType()</pre></a></li>
 </ul>
-</li></ul>
+</li>
+<li class="nav-header">
+<i title="Constants" class="icon-custom icon-constant"></i> Constants
+                    <ul>
+<li class="constant  "><a href="#constant_GZIP" title="GZIP() :: "><span class="description">GZIP</span><pre>GZIP</pre></a></li>
+<li class="constant  "><a href="#constant_NONE" title="NONE() :: "><span class="description">NONE</span><pre>NONE</pre></a></li>
+</ul>
+</li>
+</ul>
 </div>
 <div class="span8">
 <a id="\Dynamo\HttpResponse"></a><ul class="breadcrumb">
@@ -94,16 +105,41 @@
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_setBody"></a><div class="element clickable method public method_setBody" data-toggle="collapse" data-target=".method_setBody .collapse" title="public">
-<h2>setBody()
+<a id="method_setContentEncoding"></a><div class="element clickable method public method_setContentEncoding" data-toggle="collapse" data-target=".method_setContentEncoding .collapse" title="public">
+<h2>setContentEncoding()
         </h2>
-<pre>setBody($body) </pre>
+<pre>setContentEncoding($encoding<code> = self::NONE</code>) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$body</h4></div>
+<div class="subelement argument"><h4>$encoding</h4></div>
 </div></div>
+</div>
+<a id="method_setContentType"></a><div class="element clickable method public method_setContentType" data-toggle="collapse" data-target=".method_setContentType .collapse" title="public">
+<h2>setContentType()
+        </h2>
+<pre>setContentType($type<code> = 'text/plain'</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$type</h4></div>
+</div></div>
+</div>
+<h3>
+<i title="Constants" class="icon-custom icon-constant"></i> Constants</h3>
+<a id="constant_GZIP"> </a><div class="element clickable constant  constant_GZIP" data-toggle="collapse" data-target=".constant_GZIP .collapse" title="">
+<h2>GZIP</h2>
+<pre>GZIP = 1 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_NONE"> </a><div class="element clickable constant  constant_NONE" data-toggle="collapse" data-target=".constant_NONE .collapse" title="">
+<h2>NONE</h2>
+<pre>NONE = 0 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 </div>
 </div>
@@ -113,7 +149,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.2.0
 </a> and<br>
-            generated on 2013-12-27T21:02:28Z.<br></footer></div>
+            generated on 2013-12-28T22:07:12Z.<br></footer></div>
 </div>
 </body>
 </html>
