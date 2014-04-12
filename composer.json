@@ -7,7 +7,7 @@
     },
     "require-dev": {
         "sabre/http": "master@dev",
-        "phpunit/phpunit": "master@dev",
+        "phpunit/phpunit": "4.0.*@dev",
         "squizlabs/php_codesniffer": "master@dev",
         "phpdocumentor/phpdocumentor": "master@dev",
         "mikey179/vfsStream": "master@dev",
@@ -35,4 +35,3 @@
         }
     }
 }
-

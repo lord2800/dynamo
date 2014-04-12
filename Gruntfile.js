@@ -10,7 +10,7 @@ module.exports = function (grunt) {
 			app: ['src/**/*.php', 'tests/**/*.php', 'index.php']
 		},
 		phpcs: {
-			app: { dir: 'src' },
+			app: { dir: ['src'] },
 			options: { bin: 'vendor/bin/phpcs', standard: 'PSR1' }
 		},
 		// seemingly broken?
@@ -22,6 +22,8 @@ module.exports = function (grunt) {
 		phpunit: {
 			unit: { dir: 'tests/' },
 			options: {
+				// TODO figure out how to support hhvm
+				//bin: 'hhvm -f vendor/bin/phpunit --',
 				bin: 'vendor/bin/phpunit',
 				configuration: 'phpunit.xml'
 			}

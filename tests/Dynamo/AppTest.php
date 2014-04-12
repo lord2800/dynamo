@@ -41,7 +41,10 @@ class AppTest extends PHPUnit_Framework_TestCase {
 	  * @expectedExceptionMessage iterations reached, aborting
 	  */
 	public function testShouldThrowWhenInInfiniteLoop() {
-		$this->app->register(function () { while(true) yield; });
+		$this->app->register(function () {
+			while(true)
+				yield null;
+		});
 		$this->app->run();
 	}
 
@@ -49,8 +52,18 @@ class AppTest extends PHPUnit_Framework_TestCase {
 		$calledCount = 0;
 		$calledCount2 = 0;
 
-		$this->app->register(function () use(&$calledCount) { $calledCount++; yield; $calledCount++; yield; $calledCount++; });
-		$this->app->register(function () use(&$calledCount2) { $calledCount2++; yield; $calledCount2++; });
+		$this->app->register(function () use(&$calledCount) {
+			$calledCount++;
+			yield null;
+			$calledCount++;
+			yield null;
+			$calledCount++;
+		});
+		$this->app->register(function () use(&$calledCount2) {
+			$calledCount2++;
+			yield null;
+			$calledCount2++;
+		});
 		$this->app->run();
 
 		$this->assertEquals(3, $calledCount);
