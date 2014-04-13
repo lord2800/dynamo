@@ -16,4 +16,5 @@ script:
  - grunt test
 
 after_success:
+ - php vendor/bin/coveralls
  - grunt docs
