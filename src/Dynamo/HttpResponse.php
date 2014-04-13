@@ -30,4 +30,8 @@ class HttpResponse extends \Sabre\HTTP\Response {
 	public function setContentType($type = 'text/plain') {
 		static::setHeader('Content-Type', $type);
 	}
+
+    public function send() {
+        \Sabre\HTTP\Sapi::sendResponse($this);
+    }
 }
