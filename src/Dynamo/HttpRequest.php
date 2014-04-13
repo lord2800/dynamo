@@ -6,5 +6,5 @@ namespace Dynamo;
   */
 /** @codeCoverageIgnore */
 class HttpRequest extends \Sabre\HTTP\RequestDecorator {
-	public static function create() { return new static(\Sabre\HTTP\Request::createFromPHPRequest()); }
+	public static function create() { return new static(\Sabre\HTTP\Sapi::getRequest()); }
 }
