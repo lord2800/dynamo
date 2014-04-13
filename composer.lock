@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "8e0c8ea18779a6bc50a1bf20b688a447",
+    "hash": "99e3f2c1ba230f49e380c376fdd1477a",
     "packages": [
         {
             "name": "lord2800/di.php",
@@ -12,6 +12,12 @@
                 "type": "git",
                 "url": "https://github.com/lord2800/di.php.git",
                 "reference": "7cc03180bfb69af19624e3ff4f5523e5c2232e25"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lord2800/di.php/zipball/7cc03180bfb69af19624e3ff4f5523e5c2232e25",
+                "reference": "7cc03180bfb69af19624e3ff4f5523e5c2232e25",
+                "shasum": ""
             },
             "require-dev": {
                 "phpdocumentor/phpdocumentor": "dev-master",
@@ -24,6 +30,7 @@
                     "DI": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -686,6 +693,12 @@
                 "url": "https://github.com/lord2800/convey.git",
                 "reference": "c9e448a5d6e4d58fb06bdd6fb93df8a700b0b7aa"
             },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lord2800/convey/zipball/c9e448a5d6e4d58fb06bdd6fb93df8a700b0b7aa",
+                "reference": "c9e448a5d6e4d58fb06bdd6fb93df8a700b0b7aa",
+                "shasum": ""
+            },
             "require-dev": {
                 "phpdocumentor/phpdocumentor": "dev-master",
                 "phpunit/phpunit": "dev-master",
@@ -697,6 +710,7 @@
                     "Convey": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],

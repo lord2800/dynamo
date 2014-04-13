@@ -18,10 +18,6 @@
         "sabre/http": "HTTP request handling with full unit tests (required for Dynamo\\WebApp)",
         "lord2800/convey": "Lightweight flexible micro-router (required for Dynamo\\WebApp)"
     },
-    "repositories": [
-        { "type": "git", "url": "https://github.com/lord2800/di.php.git" },
-        { "type": "git", "url": "https://github.com/lord2800/convey.git" }
-    ],
     "license": "MIT",
     "authors": [
         {
