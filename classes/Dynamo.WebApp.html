@@ -31,7 +31,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">73</span></a></li>
+                <span class="label label-info">74</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -61,10 +61,22 @@
 <li class="nav-header">
 <i title="Methods" class="icon-custom icon-method"></i> Methods
                     <ul>
-<li class="method public "><a href="#method___construct" title="__construct() :: "><span class="description">__construct()
-        </span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method___construct" title="__construct() :: Generally you don't want to use this, and instead want to use the
+static create method."><span class="description">Generally you don't want to use this, and instead want to use the
+static create method.</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method___construct" title="__construct() :: Generally you don't want to use this, and instead want to use the
+static create method."><span class="description">Generally you don't want to use this, and instead want to use the
+static create method.</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method_config" title="config() :: "><span class="description">config()
+        </span><pre>config()</pre></a></li>
 <li class="method public "><a href="#method_create" title="create() :: "><span class="description">create()
         </span><pre>create()</pre></a></li>
+<li class="method public "><a href="#method_create" title="create() :: "><span class="description">create()
+        </span><pre>create()</pre></a></li>
+<li class="method public "><a href="#method_register" title="register() :: "><span class="description">register()
+        </span><pre>register()</pre></a></li>
+<li class="method public "><a href="#method_run" title="run() :: "><span class="description">run()
+        </span><pre>run()</pre></a></li>
 <li class="method public "><a href="#method_run" title="run() :: "><span class="description">run()
         </span><pre>run()</pre></a></li>
 </ul>
@@ -76,6 +88,15 @@
 <li class="property public "><a href="#property_response" title="$response() :: "><span class="description"></span><pre>$response</pre></a></li>
 <li class="property public "><a href="#property_router" title="$router() :: "><span class="description"></span><pre>$router</pre></a></li>
 </ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected "><a href="#property_injector" title="$injector() :: "><span class="description">The injector for this application</span><pre>$injector</pre></a></li>
+<li class="property protected "><a href="#property_maxIterations" title="$maxIterations() :: "><span class="description">The maximum number of loops through the generators after the first pass</span><pre>$maxIterations</pre></a></li>
+</ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul><li class="property private "><a href="#property_queue" title="$queue() :: "><span class="description"></span><pre>$queue</pre></a></li></ul>
 </li>
 </ul>
 </div>
@@ -96,8 +117,8 @@
 <h3>
 <i title="Methods" class="icon-custom icon-method"></i> Methods</h3>
 <a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse" title="public">
-<h2>__construct()
-        </h2>
+<h2>Generally you don't want to use this, and instead want to use the
+static create method.</h2>
 <pre>__construct(\DI\Injector $injector, \Convey\Router $router<code> = null</code>, \Dynamo\HttpRequest $request<code> = null</code>, \Dynamo\HttpResponse $response<code> = null</code>) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
@@ -108,6 +129,24 @@
 <div class="subelement argument"><h4>$request</h4></div>
 <div class="subelement argument"><h4>$response</h4></div>
 </div></div>
+</div>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse" title="public">
+<h2>Generally you don't want to use this, and instead want to use the
+static create method.</h2>
+<pre>__construct(\DI\Injector $injector) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$injector</h4></div>
+</div></div>
+</div>
+<a id="method_config"></a><div class="element clickable method public method_config" data-toggle="collapse" data-target=".method_config .collapse" title="public">
+<h2>config()
+        </h2>
+<pre>config() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="method_create"></a><div class="element clickable method public method_create" data-toggle="collapse" data-target=".method_create .collapse" title="public">
 <h2>create()
@@ -121,6 +160,31 @@
 <td></td>
 </tr></table>
 </div></div>
+</div>
+<a id="method_create"></a><div class="element clickable method public method_create" data-toggle="collapse" data-target=".method_create .collapse" title="public">
+<h2>create()
+        </h2>
+<pre>create() </pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_register"></a><div class="element clickable method public method_register" data-toggle="collapse" data-target=".method_register .collapse" title="public">
+<h2>register()
+        </h2>
+<pre>register(callable $middleware) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$middleware</h4></div>
+</div></div>
+</div>
+<a id="method_run"></a><div class="element clickable method public method_run" data-toggle="collapse" data-target=".method_run .collapse" title="public">
+<h2>run()
+        </h2>
+<pre>run() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="method_run"></a><div class="element clickable method public method_run" data-toggle="collapse" data-target=".method_run .collapse" title="public">
 <h2>run()
@@ -161,15 +225,51 @@
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
+<a id="property_injector"> </a><div class="element clickable property protected property_injector" data-toggle="collapse" data-target=".property_injector .collapse" title="protected">
+<h2>The injector for this application</h2>
+<pre>$injector : \DI\Injector</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>see</th>
+<td><a href="%5CDynamo%5Chttp://lord2800.github.io/di.php/coverage">The DI\Injector Code Coverage results</a></td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_maxIterations"> </a><div class="element clickable property protected property_maxIterations" data-toggle="collapse" data-target=".property_maxIterations .collapse" title="protected">
+<h2>The maximum number of loops through the generators after the first pass</h2>
+<pre>$maxIterations : int</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>10</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_queue"> </a><div class="element clickable property private property_queue" data-toggle="collapse" data-target=".property_queue .collapse" title="private">
+<h2>$queue</h2>
+<pre>$queue </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
 </div>
 </div>
 </div>
 </div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.2.0
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.5.0
 </a> and<br>
-            generated on 2013-12-28T22:07:12Z.<br></footer></div>
+            generated on 2014-06-13T04:28:50Z.<br></footer></div>
 </div>
 </body>
 </html>

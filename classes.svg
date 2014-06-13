@@ -18,7 +18,7 @@
 <path fill="none" stroke="gray" d="M121,-564C115,-564 109,-558 109,-552"/>
 <polyline fill="none" stroke="gray" points="109,-552 109,-110 "/>
 <path fill="none" stroke="gray" d="M109,-110C109,-104 115,-98 121,-98"/>
-<text text-anchor="middle" x="320.5" y="-550.1" font-family="Times Roman,serif" font-size="11.00" fill="gray">\</text>
+<text text-anchor="middle" x="320.5" y="-550.1" font-family="Times Roman,serif" font-size="11.00" fill="gray">Global</text>
 </g>
 <g id="graph3" class="cluster"><title>cluster_\Dynamo</title>
 <polyline fill="none" stroke="gray" points="129,-106 512,-106 "/>
@@ -42,72 +42,72 @@
 <path fill="none" stroke="gray" d="M392,-334C392,-328 398,-322 404,-322"/>
 <text text-anchor="middle" x="454" y="-490.1" font-family="Times Roman,serif" font-size="11.00" fill="gray">Middleware</text>
 </g>
-<!-- \\Dynamo\\Middleware\\CORS -->
-<g id="node4" class="node"><title>\\Dynamo\\Middleware\\CORS</title>
-<polygon fill="none" stroke="black" points="481,-474 427,-474 427,-438 481,-438 481,-474"/>
-<text text-anchor="middle" x="454" y="-453.1" font-family="Times Roman,serif" font-size="11.00">CORS</text>
+<!-- \\Dynamo\\Middleware\\RequestDuration -->
+<g id="node4" class="node"><title>\\Dynamo\\Middleware\\RequestDuration</title>
+<polygon fill="none" stroke="black" points="507,-474 401,-474 401,-438 507,-438 507,-474"/>
+<text text-anchor="middle" x="454" y="-453.1" font-family="Times Roman,serif" font-size="11.00">RequestDuration</text>
 </g>
 <!-- \\Dynamo\\Middleware\\Directory -->
 <g id="node5" class="node"><title>\\Dynamo\\Middleware\\Directory</title>
 <polygon fill="none" stroke="black" points="487,-420 421,-420 421,-384 487,-384 487,-420"/>
 <text text-anchor="middle" x="454" y="-399.1" font-family="Times Roman,serif" font-size="11.00">Directory</text>
 </g>
-<!-- \\Dynamo\\Middleware\\RequestDuration -->
-<g id="node6" class="node"><title>\\Dynamo\\Middleware\\RequestDuration</title>
-<polygon fill="none" stroke="black" points="507,-366 401,-366 401,-330 507,-330 507,-366"/>
-<text text-anchor="middle" x="454" y="-345.1" font-family="Times Roman,serif" font-size="11.00">RequestDuration</text>
+<!-- \\Dynamo\\Middleware\\CORS -->
+<g id="node6" class="node"><title>\\Dynamo\\Middleware\\CORS</title>
+<polygon fill="none" stroke="black" points="481,-366 427,-366 427,-330 481,-330 481,-366"/>
+<text text-anchor="middle" x="454" y="-345.1" font-family="Times Roman,serif" font-size="11.00">CORS</text>
 </g>
-<!-- \\Dynamo\\Proxy -->
-<g id="node7" class="node"><title>\\Dynamo\\Proxy</title>
-<polygon fill="none" stroke="black" points="481,-312 427,-312 427,-276 481,-276 481,-312"/>
-<text text-anchor="middle" x="454" y="-291.1" font-family="Times Roman,serif" font-size="11.00">Proxy</text>
+<!-- \\Dynamo\\HttpResponse -->
+<g id="node7" class="node"><title>\\Dynamo\\HttpResponse</title>
+<polygon fill="none" stroke="black" points="500,-258 408,-258 408,-222 500,-222 500,-258"/>
+<text text-anchor="middle" x="454" y="-237.1" font-family="Times Roman,serif" font-size="11.00">HttpResponse</text>
+</g>
+<!-- \\Sabre\\HTTP\\Response -->
+<g id="node13" class="node"><title>\\Sabre\\HTTP\\Response</title>
+<ellipse fill="none" stroke="black" cx="164" cy="-72" rx="121.122" ry="18.3848"/>
+<text text-anchor="middle" x="164" y="-68.4" font-family="Times Roman,serif" font-size="14.00" fill="gray">\Sabre\HTTP\Response</text>
+</g>
+<!-- \\Dynamo\\HttpResponse&#45;&gt;\\Sabre\\HTTP\\Response -->
+<g id="edge5" class="edge"><title>\\Dynamo\\HttpResponse&#45;&gt;\\Sabre\\HTTP\\Response</title>
+<path fill="none" stroke="black" d="M407.307,-223.639C401.813,-220.597 396.552,-217.068 392,-213 349.537,-175.056 374.533,-134.825 328,-102 315.389,-93.1037 300.916,-86.6119 285.905,-81.9088"/>
+<polygon fill="none" stroke="black" points="286.554,-78.4541 275.977,-79.0692 284.629,-85.1842 286.554,-78.4541"/>
 </g>
 <!-- \\Dynamo\\App -->
 <g id="node8" class="node"><title>\\Dynamo\\App</title>
-<polygon fill="none" stroke="black" points="202,-258 126,-258 126,-222 202,-222 202,-258"/>
-<text text-anchor="start" x="134" y="-245.433" font-family="Times Roman,serif" font-size="11.00">«abstract»</text>
-<text text-anchor="start" x="153" y="-232.233" font-family="Times Roman,serif" font-size="11.00">App</text>
+<polygon fill="none" stroke="black" points="202,-312 126,-312 126,-276 202,-276 202,-312"/>
+<text text-anchor="start" x="134" y="-299.433" font-family="Times Roman,serif" font-size="11.00">«abstract»</text>
+<text text-anchor="start" x="153" y="-286.233" font-family="Times Roman,serif" font-size="11.00">App</text>
 </g>
 <!-- \\Dynamo\\WebApp -->
 <g id="node9" class="node"><title>\\Dynamo\\WebApp</title>
-<polygon fill="none" stroke="black" points="492,-258 416,-258 416,-222 492,-222 492,-258"/>
-<text text-anchor="start" x="424" y="-245.433" font-family="Times Roman,serif" font-size="11.00">«abstract»</text>
-<text text-anchor="start" x="431" y="-232.233" font-family="Times Roman,serif" font-size="11.00">WebApp</text>
+<polygon fill="none" stroke="black" points="492,-312 416,-312 416,-276 492,-276 492,-312"/>
+<text text-anchor="start" x="424" y="-299.433" font-family="Times Roman,serif" font-size="11.00">«abstract»</text>
+<text text-anchor="start" x="431" y="-286.233" font-family="Times Roman,serif" font-size="11.00">WebApp</text>
 </g>
 <!-- \\Dynamo\\WebApp&#45;&gt;\\Dynamo\\App -->
-<g id="edge5" class="edge"><title>\\Dynamo\\WebApp&#45;&gt;\\Dynamo\\App</title>
-<path fill="none" stroke="black" d="M415.49,-240C363.274,-240 269.995,-240 212.892,-240"/>
-<polygon fill="none" stroke="black" points="212.669,-236.5 202.669,-240 212.669,-243.5 212.669,-236.5"/>
+<g id="edge7" class="edge"><title>\\Dynamo\\WebApp&#45;&gt;\\Dynamo\\App</title>
+<path fill="none" stroke="black" d="M415.49,-294C363.274,-294 269.995,-294 212.892,-294"/>
+<polygon fill="none" stroke="black" points="212.669,-290.5 202.669,-294 212.669,-297.5 212.669,-290.5"/>
+</g>
+<!-- \\Dynamo\\Proxy -->
+<g id="node10" class="node"><title>\\Dynamo\\Proxy</title>
+<polygon fill="none" stroke="black" points="481,-204 427,-204 427,-168 481,-168 481,-204"/>
+<text text-anchor="middle" x="454" y="-183.1" font-family="Times Roman,serif" font-size="11.00">Proxy</text>
 </g>
 <!-- \\Dynamo\\HttpRequest -->
-<g id="node10" class="node"><title>\\Dynamo\\HttpRequest</title>
-<polygon fill="none" stroke="black" points="496,-204 412,-204 412,-168 496,-168 496,-204"/>
-<text text-anchor="middle" x="454" y="-183.1" font-family="Times Roman,serif" font-size="11.00">HttpRequest</text>
+<g id="node11" class="node"><title>\\Dynamo\\HttpRequest</title>
+<polygon fill="none" stroke="black" points="496,-150 412,-150 412,-114 496,-114 496,-150"/>
+<text text-anchor="middle" x="454" y="-129.1" font-family="Times Roman,serif" font-size="11.00">HttpRequest</text>
 </g>
 <!-- \\Sabre\\HTTP\\RequestDecorator -->
-<g id="node14" class="node"><title>\\Sabre\\HTTP\\RequestDecorator</title>
-<ellipse fill="none" stroke="black" cx="164" cy="-72" rx="164.049" ry="18.3848"/>
-<text text-anchor="middle" x="164" y="-68.4" font-family="Times Roman,serif" font-size="14.00" fill="gray">\Sabre\HTTP\RequestDecorator</text>
+<g id="node16" class="node"><title>\\Sabre\\HTTP\\RequestDecorator</title>
+<ellipse fill="none" stroke="black" cx="164" cy="-18" rx="164.049" ry="18.3848"/>
+<text text-anchor="middle" x="164" y="-14.4" font-family="Times Roman,serif" font-size="14.00" fill="gray">\Sabre\HTTP\RequestDecorator</text>
 </g>
 <!-- \\Dynamo\\HttpRequest&#45;&gt;\\Sabre\\HTTP\\RequestDecorator -->
-<g id="edge7" class="edge"><title>\\Dynamo\\HttpRequest&#45;&gt;\\Sabre\\HTTP\\RequestDecorator</title>
-<path fill="none" stroke="black" d="M411.384,-169.587C404.71,-166.413 398.033,-162.86 392,-159 359.915,-138.472 362.227,-118.714 328,-102 315.861,-96.0722 302.697,-91.3086 289.286,-87.4819"/>
-<polygon fill="none" stroke="black" points="290.053,-84.064 279.488,-84.8578 288.242,-90.8257 290.053,-84.064"/>
-</g>
-<!-- \\Dynamo\\HttpResponse -->
-<g id="node11" class="node"><title>\\Dynamo\\HttpResponse</title>
-<polygon fill="none" stroke="black" points="500,-150 408,-150 408,-114 500,-114 500,-150"/>
-<text text-anchor="middle" x="454" y="-129.1" font-family="Times Roman,serif" font-size="11.00">HttpResponse</text>
-</g>
-<!-- \\Sabre\\HTTP\\Response -->
-<g id="node16" class="node"><title>\\Sabre\\HTTP\\Response</title>
-<ellipse fill="none" stroke="black" cx="164" cy="-18" rx="121.122" ry="18.3848"/>
-<text text-anchor="middle" x="164" y="-14.4" font-family="Times Roman,serif" font-size="14.00" fill="gray">\Sabre\HTTP\Response</text>
-</g>
-<!-- \\Dynamo\\HttpResponse&#45;&gt;\\Sabre\\HTTP\\Response -->
-<g id="edge9" class="edge"><title>\\Dynamo\\HttpResponse&#45;&gt;\\Sabre\\HTTP\\Response</title>
-<path fill="none" stroke="black" d="M433.828,-113.792C410.242,-93.5795 369.165,-61.6204 328,-45 311.896,-38.4978 294.299,-33.5606 276.801,-29.812"/>
-<polygon fill="none" stroke="black" points="277.017,-26.2851 266.522,-27.7393 275.633,-33.147 277.017,-26.2851"/>
+<g id="edge9" class="edge"><title>\\Dynamo\\HttpRequest&#45;&gt;\\Sabre\\HTTP\\RequestDecorator</title>
+<path fill="none" stroke="black" d="M433.828,-113.792C410.242,-93.5795 369.165,-61.6204 328,-45 316.166,-40.2221 303.527,-36.2893 290.713,-33.052"/>
+<polygon fill="none" stroke="black" points="291.429,-29.6249 280.89,-30.7096 289.806,-36.4339 291.429,-29.6249"/>
 </g>
 </g>
 </svg>

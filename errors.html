@@ -31,7 +31,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">73</span></a></li>
+                <span class="label label-info">74</span></a></li>
 <li><a href="markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -54,14 +54,14 @@
 <button class="btn critical">Critical</button><button class="btn error">Error</button><button class="btn notice">Notice</button>
 </div></li>
 <li class="nav-header">Navigation</li>
-<li><a href="#Proxy.php"><i class="icon-file"></i>Proxy.php</a></li>
+<li><a href="#Middleware/RequestDuration.php"><i class="icon-file"></i>Middleware/RequestDuration.php</a></li>
+<li><a href="#Middleware/Directory.php"><i class="icon-file"></i>Middleware/Directory.php</a></li>
+<li><a href="#Middleware/CORS.php"><i class="icon-file"></i>Middleware/CORS.php</a></li>
+<li><a href="#HttpResponse.php"><i class="icon-file"></i>HttpResponse.php</a></li>
 <li><a href="#App.php"><i class="icon-file"></i>App.php</a></li>
 <li><a href="#WebApp.php"><i class="icon-file"></i>WebApp.php</a></li>
+<li><a href="#Proxy.php"><i class="icon-file"></i>Proxy.php</a></li>
 <li><a href="#HttpRequest.php"><i class="icon-file"></i>HttpRequest.php</a></li>
-<li><a href="#Middleware/CORS.php"><i class="icon-file"></i>Middleware/CORS.php</a></li>
-<li><a href="#Middleware/Directory.php"><i class="icon-file"></i>Middleware/Directory.php</a></li>
-<li><a href="#Middleware/RequestDuration.php"><i class="icon-file"></i>Middleware/RequestDuration.php</a></li>
-<li><a href="#HttpResponse.php"><i class="icon-file"></i>HttpResponse.php</a></li>
 </ul></div>
 <div class="span8">
 <ul class="breadcrumb">
@@ -71,8 +71,106 @@
 <li>Compilation Errors</li>
 </ul>
 <div class="package-contents">
-<a name="Proxy.php" id="Proxy.php"></a><h3>
-<i class="icon-file"></i>Proxy.php<small style="float: right;padding-right: 10px;">18</small>
+<a name="Middleware/RequestDuration.php" id="Middleware/RequestDuration.php"></a><h3>
+<i class="icon-file"></i>Middleware/RequestDuration.php<small style="float: right;padding-right: 10px;">3</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No summary was found for this file</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>6</td>
+<td>No summary for class \Dynamo\Middleware\RequestDuration</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>7</td>
+<td>No summary for method __invoke()</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="Middleware/Directory.php" id="Middleware/Directory.php"></a><h3>
+<i class="icon-file"></i>Middleware/Directory.php<small style="float: right;padding-right: 10px;">11</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No summary was found for this file</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>8</td>
+<td>No summary for class \Dynamo\Middleware\Directory</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>9</td>
+<td>No summary for property $path</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>9</td>
+<td>No summary for property $filter</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>9</td>
+<td>No summary for property $index</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>9</td>
+<td>No summary for property $hasIndex</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>9</td>
+<td>No summary for property $finfo</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>10</td>
+<td>Argument $path is missing from the Docblock of __construct()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>10</td>
+<td>Argument $index is missing from the Docblock of __construct()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>10</td>
+<td>No summary for method __construct()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>23</td>
+<td>No summary for method __invoke()</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="Middleware/CORS.php" id="Middleware/CORS.php"></a><h3>
+<i class="icon-file"></i>Middleware/CORS.php<small style="float: right;padding-right: 10px;">16</small>
 </h3>
 <div><table class="table markers table-bordered">
 <thead><tr>
@@ -89,87 +187,131 @@
 <tr class="error">
 <td>error</td>
 <td>7</td>
-<td>No summary for class \Dynamo\Proxy</td>
+<td>No summary for class \Dynamo\Middleware\CORS</td>
 </tr>
 <tr class="error">
 <td>error</td>
 <td>8</td>
-<td>No summary for property $inst</td>
+<td>No summary for property $domains</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>9</td>
+<td>8</td>
 <td>No summary for property $methods</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>11</td>
-<td>Argument $className is missing from the Docblock of __construct()</td>
+<td>8</td>
+<td>No summary for property $allowHeaders</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>11</td>
+<td>8</td>
+<td>No summary for property $exposeHeaders</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>8</td>
+<td>No summary for property $ttl</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>8</td>
+<td>No summary for property $credentials</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>9</td>
+<td>Argument $domains is missing from the Docblock of __construct()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>9</td>
+<td>Argument $credentials is missing from the Docblock of __construct()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>9</td>
+<td>Argument $methods is missing from the Docblock of __construct()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>9</td>
+<td>Argument $allowHeaders is missing from the Docblock of __construct()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>9</td>
+<td>Argument $exposeHeaders is missing from the Docblock of __construct()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>9</td>
+<td>Argument $ttl is missing from the Docblock of __construct()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>9</td>
 <td>No summary for method __construct()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>25</td>
-<td>Argument $name is missing from the Docblock of __get()</td>
+<td>20</td>
+<td>No summary for method __invoke()</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="HttpResponse.php" id="HttpResponse.php"></a><h3>
+<i class="icon-file"></i>HttpResponse.php<small style="float: right;padding-right: 10px;">8</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No summary was found for this file</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>25</td>
-<td>No summary for method __get()</td>
+<td>10</td>
+<td>No summary for class \Dynamo\HttpResponse</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>26</td>
-<td>Argument $name is missing from the Docblock of __set()</td>
+<td>14</td>
+<td>No summary for method __construct()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>26</td>
-<td>Argument $value is missing from the Docblock of __set()</td>
+<td>19</td>
+<td>Argument $encoding is missing from the Docblock of setContentEncoding()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>26</td>
-<td>No summary for method __set()</td>
+<td>19</td>
+<td>No summary for method setContentEncoding()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>27</td>
-<td>Argument $name is missing from the Docblock of __isset()</td>
+<td>30</td>
+<td>Argument $type is missing from the Docblock of setContentType()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>27</td>
-<td>No summary for method __isset()</td>
+<td>30</td>
+<td>No summary for method setContentType()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>28</td>
-<td>Argument $name is missing from the Docblock of __unset()</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>28</td>
-<td>No summary for method __unset()</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>29</td>
-<td>Argument $name is missing from the Docblock of __call()</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>29</td>
-<td>Argument $arguments is missing from the Docblock of __call()</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>29</td>
-<td>No summary for method __call()</td>
+<td>34</td>
+<td>No summary for method send()</td>
 </tr>
 </tbody>
 </table></div>
@@ -278,6 +420,110 @@
 </table></div>
 </div>
 <div class="package-contents">
+<a name="Proxy.php" id="Proxy.php"></a><h3>
+<i class="icon-file"></i>Proxy.php<small style="float: right;padding-right: 10px;">18</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No summary was found for this file</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>7</td>
+<td>No summary for class \Dynamo\Proxy</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>8</td>
+<td>No summary for property $inst</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>9</td>
+<td>No summary for property $methods</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>11</td>
+<td>Argument $className is missing from the Docblock of __construct()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>11</td>
+<td>No summary for method __construct()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>25</td>
+<td>Argument $name is missing from the Docblock of __get()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>25</td>
+<td>No summary for method __get()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>26</td>
+<td>Argument $name is missing from the Docblock of __set()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>26</td>
+<td>Argument $value is missing from the Docblock of __set()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>26</td>
+<td>No summary for method __set()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>27</td>
+<td>Argument $name is missing from the Docblock of __isset()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>27</td>
+<td>No summary for method __isset()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>28</td>
+<td>Argument $name is missing from the Docblock of __unset()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>28</td>
+<td>No summary for method __unset()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>29</td>
+<td>Argument $name is missing from the Docblock of __call()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>29</td>
+<td>Argument $arguments is missing from the Docblock of __call()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>29</td>
+<td>No summary for method __call()</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="package-contents">
 <a name="HttpRequest.php" id="HttpRequest.php"></a><h3>
 <i class="icon-file"></i>HttpRequest.php<small style="float: right;padding-right: 10px;">3</small>
 </h3>
@@ -306,254 +552,13 @@
 </tbody>
 </table></div>
 </div>
-<div class="package-contents">
-<a name="Middleware/CORS.php" id="Middleware/CORS.php"></a><h3>
-<i class="icon-file"></i>Middleware/CORS.php<small style="float: right;padding-right: 10px;">16</small>
-</h3>
-<div><table class="table markers table-bordered">
-<thead><tr>
-<th>Type</th>
-<th>Line</th>
-<th>Description</th>
-</tr></thead>
-<tbody>
-<tr class="error">
-<td>error</td>
-<td>0</td>
-<td>No summary was found for this file</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>7</td>
-<td>No summary for class \Dynamo\Middleware\CORS</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>8</td>
-<td>No summary for property $domains</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>8</td>
-<td>No summary for property $methods</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>8</td>
-<td>No summary for property $allowHeaders</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>8</td>
-<td>No summary for property $exposeHeaders</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>8</td>
-<td>No summary for property $ttl</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>8</td>
-<td>No summary for property $credentials</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>9</td>
-<td>Argument $domains is missing from the Docblock of __construct()</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>9</td>
-<td>Argument $credentials is missing from the Docblock of __construct()</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>9</td>
-<td>Argument $methods is missing from the Docblock of __construct()</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>9</td>
-<td>Argument $allowHeaders is missing from the Docblock of __construct()</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>9</td>
-<td>Argument $exposeHeaders is missing from the Docblock of __construct()</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>9</td>
-<td>Argument $ttl is missing from the Docblock of __construct()</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>9</td>
-<td>No summary for method __construct()</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>20</td>
-<td>No summary for method __invoke()</td>
-</tr>
-</tbody>
-</table></div>
-</div>
-<div class="package-contents">
-<a name="Middleware/Directory.php" id="Middleware/Directory.php"></a><h3>
-<i class="icon-file"></i>Middleware/Directory.php<small style="float: right;padding-right: 10px;">11</small>
-</h3>
-<div><table class="table markers table-bordered">
-<thead><tr>
-<th>Type</th>
-<th>Line</th>
-<th>Description</th>
-</tr></thead>
-<tbody>
-<tr class="error">
-<td>error</td>
-<td>0</td>
-<td>No summary was found for this file</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>8</td>
-<td>No summary for class \Dynamo\Middleware\Directory</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>9</td>
-<td>No summary for property $path</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>9</td>
-<td>No summary for property $filter</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>9</td>
-<td>No summary for property $index</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>9</td>
-<td>No summary for property $hasIndex</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>9</td>
-<td>No summary for property $finfo</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>10</td>
-<td>Argument $path is missing from the Docblock of __construct()</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>10</td>
-<td>Argument $index is missing from the Docblock of __construct()</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>10</td>
-<td>No summary for method __construct()</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>23</td>
-<td>No summary for method __invoke()</td>
-</tr>
-</tbody>
-</table></div>
-</div>
-<div class="package-contents">
-<a name="Middleware/RequestDuration.php" id="Middleware/RequestDuration.php"></a><h3>
-<i class="icon-file"></i>Middleware/RequestDuration.php<small style="float: right;padding-right: 10px;">3</small>
-</h3>
-<div><table class="table markers table-bordered">
-<thead><tr>
-<th>Type</th>
-<th>Line</th>
-<th>Description</th>
-</tr></thead>
-<tbody>
-<tr class="error">
-<td>error</td>
-<td>0</td>
-<td>No summary was found for this file</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>6</td>
-<td>No summary for class \Dynamo\Middleware\RequestDuration</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>7</td>
-<td>No summary for method __invoke()</td>
-</tr>
-</tbody>
-</table></div>
-</div>
-<div class="package-contents">
-<a name="HttpResponse.php" id="HttpResponse.php"></a><h3>
-<i class="icon-file"></i>HttpResponse.php<small style="float: right;padding-right: 10px;">7</small>
-</h3>
-<div><table class="table markers table-bordered">
-<thead><tr>
-<th>Type</th>
-<th>Line</th>
-<th>Description</th>
-</tr></thead>
-<tbody>
-<tr class="error">
-<td>error</td>
-<td>0</td>
-<td>No summary was found for this file</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>10</td>
-<td>No summary for class \Dynamo\HttpResponse</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>14</td>
-<td>No summary for method __construct()</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>19</td>
-<td>Argument $encoding is missing from the Docblock of setContentEncoding()</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>19</td>
-<td>No summary for method setContentEncoding()</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>30</td>
-<td>Argument $type is missing from the Docblock of setContentType()</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>30</td>
-<td>No summary for method setContentType()</td>
-</tr>
-</tbody>
-</table></div>
-</div>
 </div>
 </div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.2.0
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.5.0
 </a> and<br>
-            generated on 2013-12-28T22:07:12Z.<br></footer></div>
+            generated on 2014-06-13T04:28:50Z.<br></footer></div>
 </div>
 </body>
 </html>
