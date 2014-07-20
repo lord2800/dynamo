@@ -1,6 +1,8 @@
 language: php
 php:
- - 5.5
+ - '5.5'
+ - '5.6'
+ - hhvm
 
 env:
   global:
@@ -11,9 +13,6 @@ install:
  - composer install --prefer-dist --dev
  - npm install -g grunt-cli
  - npm install
-
-script:
- - grunt test
 
 after_success:
  - php vendor/bin/coveralls
