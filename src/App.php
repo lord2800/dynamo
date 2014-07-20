@@ -5,14 +5,9 @@ use DI\Injector;
 
 abstract class App {
 	private $queue;
-	/**
-	  * @var \DI\Injector The injector for this application
-	  * @see http://lord2800.github.io/di.php/coverage The DI\Injector Code Coverage results
-	  */
+	/** @var \DI\Injector The injector for this application */
 	protected $injector;
-	/**
-	  * @var int The maximum number of loops through the generators after the first pass
-	  */
+	/** @var int The maximum number of loops through the generators after the first pass */
 	protected $maxIterations = 10;
 
 	/**
@@ -22,11 +17,12 @@ abstract class App {
 	  */
 	public function __construct(Injector $injector) {
 		$this->injector = $injector;
+		$this->queue = new \SplQueue();
 	}
 
 	public static function create() {
 		$injector = new Injector();
-		$injector->provide('injector', $injector);
+		$injector->bind(Injector::class, $injector);
 
 		return new static($injector);
 	}
@@ -34,9 +30,6 @@ abstract class App {
 	public abstract function config();
 
 	public function register(callable $middleware) {
-		if(empty($this->queue)) {
-			$this->queue = new \SplQueue();
-		}
 		$this->queue->enqueue($middleware);
 	}
 
@@ -45,7 +38,7 @@ abstract class App {
 
 		$generators = [];
 		foreach($this->queue as $middleware) {
-			$boundFn = $this->injector->inject($middleware);
+			$boundFn = $this->injector->annotate($middleware);
 			$result = $boundFn();
 			if($result instanceof \Generator) {
 				array_unshift($generators, $result);

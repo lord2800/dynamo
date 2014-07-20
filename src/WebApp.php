@@ -13,38 +13,38 @@ abstract class WebApp extends App {
 	/** @codeCoverageIgnore */
 	public static function create() {
 		$injector = new Injector();
-		$injector->provide('injector', $injector);
+		$injector->bind(Injector::class, $injector);
+
 		$request = HttpRequest::create();
 		$response = new HttpResponse();
 		$router = new Router();
+
 		return new static($injector, $router, $request, $response);
 	}
 
 	public function __construct(Injector $injector, Router $router = null, HttpRequest $request = null, HttpResponse $response = null) {
+		parent::__construct($injector);
 		$this->router = $router;
 
-		$injector->provide('request', $request);
-		$injector->provide('response', $response);
-		$injector->provide('router', $this->router);
-		$this->injector = $injector;
-		ob_start();
+		$injector->bind(HttpRequest::class, $request);
+		$injector->bind(HttpResponse::class, $response);
+		$injector->bind(Router::class, $router);
 	}
 
 	public function run() {
+		ob_start();
 		$self = $this;
 		$this->register(function (HttpRequest $request, Injector $injector) use($self) {
-			$m = strtolower($request->getMethod());
+			$m = $request->getMethod();
 			$p = $request->getUrl();
 			foreach($self->router->route($m, $p) as $route) {
-				list($args, $cb) = $route;
-				$self->injector->provide('params', $args);
-				$fn = $self->injector->inject($cb);
-				$fn();
+				$route();
 			}
 		});
 
 		parent::run();
+		ob_end_clean();
 
-		return $this->injector->retrieve('response');
+		return $this->injector->get(HttpResponse::class);
 	}
 }

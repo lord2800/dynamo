@@ -7,7 +7,7 @@
     },
     "require-dev": {
         "sabre/http": "master@dev",
-        "phpunit/phpunit": "4.0.*@dev",
+        "phpunit/phpunit": "master@dev",
         "squizlabs/php_codesniffer": "master@dev",
         "phpdocumentor/phpdocumentor": "master@dev",
         "satooshi/php-coveralls": "master@dev",
@@ -27,8 +27,9 @@
     ],
     "minimum-stability": "dev",
     "autoload": {
-        "psr-0": {
-            "Dynamo": "src/"
+        "psr-4": {
+            "Dynamo\\": "src/",
+            "Dynamo\\Tests\\": "tests/"
         }
     }
 }

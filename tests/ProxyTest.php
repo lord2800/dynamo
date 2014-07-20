@@ -1,4 +1,5 @@
 <?php
+namespace Dynamo\Tests;
 
 use Dynamo\Proxy;
 
@@ -11,10 +12,10 @@ class A {
 }
 
 class ProxyA extends Proxy {
-	public function __construct($v) { parent::__construct('\\A', $v); }
+	public function __construct($v) { parent::__construct('Dynamo\\Tests\\A', $v); }
 }
 
-class ProxyTest extends PHPUnit_Framework_TestCase {
+class ProxyTest extends \PHPUnit_Framework_TestCase {
 	private $proxy;
 
 	public function setUp() {
