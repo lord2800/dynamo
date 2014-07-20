@@ -2,14 +2,14 @@
 <html lang="en">
  <head>
   <meta charset="UTF-8">
-  <title>Dashboard for /home/travis</title>
+  <title>Dashboard for /home/travis/build/lord2800/dynamo/src/Middleware</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/nv.d3.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="../../../../../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../../../../css/nv.d3.css" rel="stylesheet">
+  <link href="../../../../../css/style.css" rel="stylesheet">
   <!--[if lt IE 9]>
-  <script src="js/html5shiv.js"></script>
-  <script src="js/respond.min.js"></script>
+  <script src="../../../../../js/html5shiv.js"></script>
+  <script src="../../../../../js/respond.min.js"></script>
   <![endif]-->
  </head>
  <body>
@@ -18,7 +18,12 @@
     <div class="row">
      <div class="col-md-12">
       <ol class="breadcrumb">
-        <li><a href="index.html">/home/travis</a></li>
+        <li><a href="../../../../../index.html">/home/travis</a></li>
+        <li><a href="../../../../index.html">build</a></li>
+        <li><a href="../../../index.html">lord2800</a></li>
+        <li><a href="../../index.html">dynamo</a></li>
+        <li><a href="../index.html">src</a></li>
+        <li><a href="index.html">Middleware</a></li>
         <li class="active">(Dashboard)</li>
 
       </ol>
@@ -140,11 +145,11 @@
     </p>
    </footer>
   </div>
-  <script src="js/jquery.js" type="text/javascript"></script>
-  <script src="js/bootstrap.min.js" type="text/javascript"></script>
-  <script src="js/holder.js" type="text/javascript"></script>
-  <script src="js/d3.min.js" type="text/javascript"></script>
-  <script src="js/nv.d3.min.js" type="text/javascript"></script>
+  <script src="../../../../../js/jquery.js" type="text/javascript"></script>
+  <script src="../../../../../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../../../../../js/holder.js" type="text/javascript"></script>
+  <script src="../../../../../js/d3.min.js" type="text/javascript"></script>
+  <script src="../../../../../js/nv.d3.min.js" type="text/javascript"></script>
   <script type="text/javascript">
 $(document).ready(function() {
   nv.addGraph(function() {
@@ -157,7 +162,7 @@ $(document).ready(function() {
       .yAxis.tickFormat(d3.format('d'));
 
     d3.select('#classCoverageDistribution svg')
-      .datum(getCoverageDistributionData([0,0,0,0,0,0,0,0,0,0,0,6], "Class Coverage"))
+      .datum(getCoverageDistributionData([0,0,0,0,0,0,0,0,0,0,0,3], "Class Coverage"))
       .transition().duration(500).call(chart);
 
     nv.utils.windowResize(chart.update);
@@ -175,7 +180,7 @@ $(document).ready(function() {
       .yAxis.tickFormat(d3.format('d'));
 
     d3.select('#methodCoverageDistribution svg')
-      .datum(getCoverageDistributionData([0,0,0,0,0,0,0,0,0,0,0,21], "Method Coverage"))
+      .datum(getCoverageDistributionData([0,0,0,0,0,0,0,0,0,0,0,6], "Method Coverage"))
       .transition().duration(500).call(chart);
 
     nv.utils.windowResize(chart.update);
@@ -226,7 +231,7 @@ $(document).ready(function() {
     chart.yAxis.axisLabel('Cyclomatic Complexity');
 
     d3.select('#classComplexity svg')
-      .datum(getComplexityData([[100,12,"<a href=\"build\/lord2800\/dynamo\/src\/App.php.html#6\">App<\/a>"],[100,15,"<a href=\"build\/lord2800\/dynamo\/src\/Middleware\/CORS.php.html#7\">CORS<\/a>"],[100,10,"<a href=\"build\/lord2800\/dynamo\/src\/Middleware\/Directory.php.html#8\">Directory<\/a>"],[100,1,"<a href=\"build\/lord2800\/dynamo\/src\/Middleware\/RequestDuration.php.html#6\">RequestDuration<\/a>"],[100,9,"<a href=\"build\/lord2800\/dynamo\/src\/Proxy.php.html#7\">Proxy<\/a>"],[100,6,"<a href=\"build\/lord2800\/dynamo\/src\/WebApp.php.html#7\">WebApp<\/a>"]], 'Class Complexity'))
+      .datum(getComplexityData([[100,15,"<a href=\"build\/lord2800\/dynamo\/src\/Middleware\/CORS.php.html#7\">CORS<\/a>"],[100,10,"<a href=\"build\/lord2800\/dynamo\/src\/Middleware\/Directory.php.html#8\">Directory<\/a>"],[100,1,"<a href=\"build\/lord2800\/dynamo\/src\/Middleware\/RequestDuration.php.html#6\">RequestDuration<\/a>"]], 'Class Complexity'))
       .transition()
       .duration(500)
       .call(chart);
@@ -251,7 +256,7 @@ $(document).ready(function() {
     chart.yAxis.axisLabel('Method Complexity');
 
     d3.select('#methodComplexity svg')
-      .datum(getComplexityData([[100,1,"<a href=\"build\/lord2800\/dynamo\/src\/App.php.html#18\">App::__construct<\/a>"],[100,1,"<a href=\"build\/lord2800\/dynamo\/src\/App.php.html#23\">App::create<\/a>"],[100,1,"<a href=\"build\/lord2800\/dynamo\/src\/App.php.html#30\">App::config<\/a>"],[100,1,"<a href=\"build\/lord2800\/dynamo\/src\/App.php.html#32\">App::register<\/a>"],[100,8,"<a href=\"build\/lord2800\/dynamo\/src\/App.php.html#36\">App::run<\/a>"],[100,6,"<a href=\"build\/lord2800\/dynamo\/src\/Middleware\/CORS.php.html#9\">CORS::__construct<\/a>"],[100,9,"<a href=\"build\/lord2800\/dynamo\/src\/Middleware\/CORS.php.html#20\">CORS::__invoke<\/a>"],[100,4,"<a href=\"build\/lord2800\/dynamo\/src\/Middleware\/Directory.php.html#10\">Directory::__construct<\/a>"],[100,1,"<a href=\"build\/lord2800\/dynamo\/src\/Middleware\/Directory.php.html#17\">Directory::anonymous function<\/a>"],[100,5,"<a href=\"build\/lord2800\/dynamo\/src\/Middleware\/Directory.php.html#23\">Directory::__invoke<\/a>"],[100,1,"<a href=\"build\/lord2800\/dynamo\/src\/Middleware\/RequestDuration.php.html#7\">RequestDuration::__invoke<\/a>"],[100,4,"<a href=\"build\/lord2800\/dynamo\/src\/Proxy.php.html#11\">Proxy::__construct<\/a>"],[100,1,"<a href=\"build\/lord2800\/dynamo\/src\/Proxy.php.html#25\">Proxy::__get<\/a>"],[100,1,"<a href=\"build\/lord2800\/dynamo\/src\/Proxy.php.html#26\">Proxy::__set<\/a>"],[100,1,"<a href=\"build\/lord2800\/dynamo\/src\/Proxy.php.html#27\">Proxy::__isset<\/a>"],[100,1,"<a href=\"build\/lord2800\/dynamo\/src\/Proxy.php.html#28\">Proxy::__unset<\/a>"],[100,1,"<a href=\"build\/lord2800\/dynamo\/src\/Proxy.php.html#29\">Proxy::__call<\/a>"],[100,1,"<a href=\"build\/lord2800\/dynamo\/src\/WebApp.php.html#14\">WebApp::create<\/a>"],[100,1,"<a href=\"build\/lord2800\/dynamo\/src\/WebApp.php.html#25\">WebApp::__construct<\/a>"],[100,2,"<a href=\"build\/lord2800\/dynamo\/src\/WebApp.php.html#34\">WebApp::run<\/a>"],[100,2,"<a href=\"build\/lord2800\/dynamo\/src\/WebApp.php.html#37\">WebApp::anonymous function<\/a>"]], 'Method Complexity'))
+      .datum(getComplexityData([[100,6,"<a href=\"build\/lord2800\/dynamo\/src\/Middleware\/CORS.php.html#9\">CORS::__construct<\/a>"],[100,9,"<a href=\"build\/lord2800\/dynamo\/src\/Middleware\/CORS.php.html#20\">CORS::__invoke<\/a>"],[100,4,"<a href=\"build\/lord2800\/dynamo\/src\/Middleware\/Directory.php.html#10\">Directory::__construct<\/a>"],[100,1,"<a href=\"build\/lord2800\/dynamo\/src\/Middleware\/Directory.php.html#17\">Directory::anonymous function<\/a>"],[100,5,"<a href=\"build\/lord2800\/dynamo\/src\/Middleware\/Directory.php.html#23\">Directory::__invoke<\/a>"],[100,1,"<a href=\"build\/lord2800\/dynamo\/src\/Middleware\/RequestDuration.php.html#7\">RequestDuration::__invoke<\/a>"]], 'Method Complexity'))
       .transition()
       .duration(500)
       .call(chart);
